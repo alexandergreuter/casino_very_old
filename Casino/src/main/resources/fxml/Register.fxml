@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import java.net.URL?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" id="AnchorPane" prefHeight="432.0" prefWidth="768.0"
+            xmlns="http://javafx.com/javafx/8.0.172-ea"
+            fx:controller="main.ch.bbbaden.programmierwoche.casino.Scenes.RegisterController">
+    <stylesheets>
+        <URL value="@/styles/BasicStyle.css"/>
+        <URL value="@/styles/LoginStyle.css"/>
+    </stylesheets>
+    <Button fx:id="login" layoutX="299.0" layoutY="298.0" mnemonicParsing="false" onAction="#on_register"
+            prefHeight="38.0" prefWidth="170.0" text="Registrieren"/>
+    <TextField fx:id="username" layoutX="299.0" layoutY="159.0" prefHeight="32.0" prefWidth="170.0"
+               promptText="Benutzername"/>
+    <Label alignment="CENTER" layoutX="270.0" layoutY="77.0" prefHeight="59.0" prefWidth="235.0" text="Registrieren">
+        <font>
+            <Font size="40.0"/>
+        </font>
+    </Label>
+    <PasswordField layoutX="299.0" layoutY="204.0" prefHeight="32.0" prefWidth="170.0" promptText="Passwort"/>
+    <TextField layoutX="299.0" layoutY="251.0" prefHeight="32.0" prefWidth="170.0" promptText="Startbetrag"/>
+</AnchorPane>

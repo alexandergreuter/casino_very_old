@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'Casino';
+  src: url('/fonts/Casino.ttf');
+}
+
+*{
+    -fx-font-family: Casino;
+    -fx-font-size: 20px;
+}
+
+#AnchorPane{
+    -fx-background-image: url("../images/background.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 768 432;
+    -fx-background-position: center center;
+}
