@@ -4,23 +4,23 @@ import ch.bbbaden.casino.games.Game;
 import ch.bbbaden.casino.games.TestGame2Model;
 import ch.bbbaden.casino.games.TestGameModel;
 import ch.bbbaden.casino.Model;
-import ch.bbbaden.casino.User;
+import ch.bbbaden.casino.NormalUser;
 
 
 class HomeModel extends Model {
 
-    private User user;
+    private NormalUser normalUser;
     private Game[] games;
     private int currIndex = 0;
 
-    HomeModel(User user) {
+    HomeModel(NormalUser normalUser) {
         super("/fxml/Home.fxml", "Welcome", true);
-        this.user = user;
-        games = new Game[]{new TestGameModel(user), new TestGame2Model(user)};
+        this.normalUser = normalUser;
+        games = new Game[]{new TestGameModel(normalUser), new TestGame2Model(normalUser)};
     }
 
     String getCoins() {
-        return Integer.toString(user.getCoins());
+        return Integer.toString(normalUser.getCoins());
     }
 
     void playGame() {
