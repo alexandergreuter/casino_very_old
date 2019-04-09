@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5d73706-3517-4568-9dd7-621d8ae49483" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/NormalUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/NormalUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/games/TestGame2Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/games/TestGame2Model.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/scenes/HomeModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/scenes/HomeModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/Admin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/Admin.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/styles/BasicStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/styles/BasicStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ch/bbbaden/casino/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ch/bbbaden/casino/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ch/bbbaden/casino/games/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ch/bbbaden/casino/games/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ch/bbbaden/casino/games/TestGame2Model.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ch/bbbaden/casino/games/TestGame2Model.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ch/bbbaden/casino/games/TestGameModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ch/bbbaden/casino/games/TestGameModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ch/bbbaden/casino/scenes/HomeModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ch/bbbaden/casino/scenes/HomeModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ch/bbbaden/casino/scenes/LoginModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ch/bbbaden/casino/scenes/LoginModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/styles/BasicStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/styles/BasicStyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/scenes/ShopController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/scenes/ShopModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/fxml/Shop.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,39 +19,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="37">
               <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/games/Game.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/games/TestGame2Model.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/games/TestGameController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -109,7 +68,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/AdminUser.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
@@ -133,7 +92,46 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/scenes/ShopModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/Shop.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="10" column="57" lean-forward="true" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/scenes/ShopController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -146,6 +144,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/styles/BasicStyle.css" />
         <option value="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/scenes/HomeModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/games/TestGame2Model.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/fxml/Shop.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/scenes/ShopController.java" />
       </list>
     </option>
   </component>
@@ -276,7 +276,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554819053576" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554821579848" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunDashboard">
@@ -311,12 +311,12 @@
       <option name="presentableId" value="Default" />
       <updated>1554715467718</updated>
       <workItem from="1554715473636" duration="952000" />
-      <workItem from="1554808154223" duration="8277000" />
+      <workItem from="1554808154223" duration="9567000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6982000" />
+    <option name="totallyTimeSpent" value="8272000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -595,16 +595,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/scenes/HomeModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
-          <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/scenes/StartModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -628,6 +618,41 @@
           <caret line="19" column="27" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
           <folding>
             <element signature="e#295#307#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/scenes/HomeModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37">
+          <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/scenes/ShopModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/Shop.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="57" lean-forward="true" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/scenes/ShopController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
