@@ -3,7 +3,7 @@ package ch.bbbaden.casino.games;
 import ch.bbbaden.casino.Model;
 import ch.bbbaden.casino.User;
 
-public abstract class Game extends Model {
+public class Game extends Model {
 
     private String imagePath;
     private User user;
