@@ -1,10 +1,9 @@
 @font-face {
-    font-family: 'Casino';
+    -fx-font-family: 'Casino';
     src: url('/fonts/Casino.ttf');
 }
-
 * {
-    -fx-font-family: Casino;
+    -fx-font-family: "src/main/resources";
     -fx-font-size: 20px;
 }
 

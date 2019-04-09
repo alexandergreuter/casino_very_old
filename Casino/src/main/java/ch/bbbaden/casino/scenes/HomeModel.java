@@ -16,7 +16,7 @@ class HomeModel extends Model {
     HomeModel(NormalUser normalUser) {
         super("/fxml/Home.fxml", "Welcome", true);
         this.normalUser = normalUser;
-        games = new Game[]{new TestGameModel(normalUser), new TestGame2Model(normalUser)};
+        games = new Game[]{new TestGameModel(normalUser), new TestGame2Model(normalUser), new TestGame2Model(normalUser)};
     }
 
     String getCoins() {

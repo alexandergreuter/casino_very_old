@@ -5,12 +5,10 @@
  */
 package ch.bbbaden.casino;
 
-import javax.jws.soap.SOAPBinding;
 import java.sql.SQLException;
 import java.util.Random;
 
 /**
- *
  * @author greut
  */
 public class NormalUser extends User {
