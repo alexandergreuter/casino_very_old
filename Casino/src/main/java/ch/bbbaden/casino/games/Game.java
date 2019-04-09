@@ -1,24 +1,24 @@
 package ch.bbbaden.casino.games;
 
 import ch.bbbaden.casino.Model;
-import ch.bbbaden.casino.User;
+import ch.bbbaden.casino.NormalUser;
 
 public class Game extends Model {
 
     private String imagePath;
-    private User user;
+    private NormalUser normalUser;
 
-    Game(String fxmlDocument, String windowTitle, String imagePath, User user) {
+    Game(String fxmlDocument, String windowTitle, String imagePath, NormalUser normalUser) {
         super(fxmlDocument, windowTitle, false);
         this.imagePath = imagePath;
-        this.user = user;
+        this.normalUser = normalUser;
     }
 
     public String getImagePath() {
         return imagePath;
     }
 
-    public User getUser() {
-        return user;
+    public NormalUser getNormalUser() {
+        return normalUser;
     }
 }
