@@ -3,9 +3,8 @@
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.Admin">
    <children>
-      <ListView fx:id="Users" layoutX="14.0" layoutY="13.0" prefHeight="375.0" prefWidth="200.0" />
+      <ListView fx:id="Users" layoutX="15.0" layoutY="85.0" prefHeight="245.0" prefWidth="195.0" />
    </children>
 </AnchorPane>

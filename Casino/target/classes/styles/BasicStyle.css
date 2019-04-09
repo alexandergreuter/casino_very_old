@@ -1,6 +1,5 @@
 @font-face {
-    font-family: 'Casino';
-    src: url('/fonts/Casino.ttf');
+    src: url('../fonts/Casino.ttf');
 }
 
 * {
