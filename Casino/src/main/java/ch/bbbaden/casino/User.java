@@ -3,17 +3,19 @@ package ch.bbbaden.casino;
 import javax.xml.bind.DatatypeConverter;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.Random;
 
 public class User {
 
-    String username, password;
+    private String username, password;
+    private Statement statement;
+    private ResultSet rs;
 
     public User() throws SQLException {
         Connection connie = DriverManager.getConnection("jdbc:mysql://localhost:3306/casino", "root", "");
+        statement = connie.createStatement();
+        rs = statement.executeQuery("SELECT * FROM users");
     }
 
     public void login(String username, String password) throws SQLException {
@@ -42,7 +44,13 @@ public class User {
         return myHash;
     }
 
-    private boolean searchUserExistance(String username) {
+    private boolean searchUserExistance(String username) throws SQLException {
+        while (rs.next()) {
+            for (int i = 1; i <= 2; i++) {
+                System.out.println("| " + rs.getString(i));
+            }
+            System.out.println("|");
+        }
         return false;
     }
 }
