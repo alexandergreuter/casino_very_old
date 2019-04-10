@@ -1,14 +1,11 @@
 package ch.bbbaden.casino;
 
+import java.sql.SQLException;
 import java.util.ArrayList;
 
 public class AdminUser extends User {
 
     private ArrayList<User> users;
-
-    public AdminUser(){
-        updateUsers();
-    }
 
     public ArrayList<NormalUser> getNormalUsers() {
         ArrayList<NormalUser> normalUsers = new ArrayList<NormalUser>();
@@ -20,8 +17,12 @@ public class AdminUser extends User {
         return normalUsers;
     }
 
-    private void updateUsers(){
+    private void updateUsers() {
         users = new ArrayList<User>();
-        users.add(new NormalUser());
+        try {
+            users.add(new NormalUser());
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 }

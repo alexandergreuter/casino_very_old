@@ -9,18 +9,18 @@ import java.util.Random;
 public class User {
 
     private String username, password;
+    Connection connie;
     private Statement statement;
     private ResultSet rs;
-
-    public User() throws SQLException {
-        Connection connie = DriverManager.getConnection("jdbc:mysql://localhost:3306/casino", "root", "");
-        statement = connie.createStatement();
-        rs = statement.executeQuery("SELECT * FROM users");
-    }
 
     public void login(String username, String password) throws SQLException {
         this.username = username;
         this.password = password;
+
+        connie = DriverManager.getConnection("jdbc:mysql://localhost:3306/casino", "root", "");
+        statement = connie.createStatement();
+        rs = statement.executeQuery("SELECT * FROM users");
+
         if (username.equals("hans")) {
             if (password.equals("1234")) {
                 Random rnd = new Random();
@@ -46,9 +46,7 @@ public class User {
 
     private boolean searchUserExistance(String username) throws SQLException {
         while (rs.next()) {
-            for (int i = 1; i <= 2; i++) {
-                System.out.println("| " + rs.getString(i));
-            }
+            System.out.println("| " + rs.getString(1));
             System.out.println("|");
         }
         return false;

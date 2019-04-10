@@ -4,16 +4,15 @@ import ch.bbbaden.casino.games.Game;
 import ch.bbbaden.casino.games.TestGame2Model;
 import ch.bbbaden.casino.games.TestGameModel;
 import ch.bbbaden.casino.Model;
-import ch.bbbaden.casino.NormalUser;
 
 
 class HomeModel extends Model {
 
-    private NormalUser normalUser;
+    private oldNormalUser normalUser;
     private Game[] games;
     private int currIndex = 0;
 
-    HomeModel(NormalUser normalUser) {
+    HomeModel(oldNormalUser normalUser) {
         super("/fxml/Home.fxml", "Welcome", true);
         this.normalUser = normalUser;
         games = new Game[]{new TestGameModel(normalUser), new TestGame2Model(normalUser)};
