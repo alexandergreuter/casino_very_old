@@ -6,6 +6,7 @@
 package ch.bbbaden.casino.scenes;
 
 import ch.bbbaden.casino.Model;
+import ch.bbbaden.casino.NormalUser;
 
 import java.sql.SQLException;
 
@@ -13,7 +14,7 @@ import java.sql.SQLException;
  * @author greut
  */
 class LoginModel extends Model {
-    private oldNormalUser normalUser;
+    private NormalUser normalUser;
 
     private String username = "";
     private String password = "";
@@ -37,7 +38,7 @@ class LoginModel extends Model {
 
     void login(String username, String password) {
         boolean loginSuccessful = false;
-        normalUser = new oldNormalUser();
+        normalUser = new NormalUser();
         try {
             normalUser.login(username, password);
             loginSuccessful = true;

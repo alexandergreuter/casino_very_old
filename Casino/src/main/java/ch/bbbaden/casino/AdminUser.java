@@ -1,6 +1,5 @@
 package ch.bbbaden.casino;
 
-import java.sql.SQLException;
 import java.util.ArrayList;
 
 public class AdminUser extends User {
@@ -19,10 +18,6 @@ public class AdminUser extends User {
 
     private void updateUsers() {
         users = new ArrayList<User>();
-        try {
-            users.add(new NormalUser());
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+        users.add(new NormalUser());
     }
 }
