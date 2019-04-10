@@ -3,6 +3,7 @@ package ch.bbbaden.casino;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -29,6 +30,7 @@ public class Model {
             controller = loader.getController();
             Scene scene = new Scene(root);
             stage.setTitle(windowTitle);
+            stage.getIcons().add(new Image("/images/Logo.png"));
             stage.setScene(scene);
             stage.setResizable(false);
         } catch (IOException e) {

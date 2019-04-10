@@ -10,6 +10,7 @@ import ch.bbbaden.casino.Model;
 import javafx.event.ActionEvent;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
 import java.net.URL;
@@ -24,6 +25,10 @@ public class RegisterController implements Initializable, Controller {
 
     public Button login;
     public TextField username;
+    public Button register;
+    public PasswordField password;
+    public TextField startCoins;
+    RegisterModel registerModel;
 
     /**
      * Initializes the controller class.
@@ -35,9 +40,10 @@ public class RegisterController implements Initializable, Controller {
 
 
     public void update(Model model) {
-
+        registerModel = (RegisterModel) model;
     }
 
-    public void on_register(ActionEvent actionEvent) {
+    public void on_register(ActionEvent actionEvent) throws NumberFormatException {
+        registerModel.register(username.getText(), password.getText(), Integer.parseInt(startCoins.getText()));
     }
 }

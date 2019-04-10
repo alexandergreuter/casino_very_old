@@ -1,3 +1,4 @@
+ch\bbbaden\casino\scenes\RegisterFailedController.class
 ch\bbbaden\casino\scenes\RegisterModel.class
 ch\bbbaden\casino\games\TestGame2Model.class
 ch\bbbaden\casino\scenes\LoginController.class
@@ -8,6 +9,7 @@ ch\bbbaden\casino\scenes\LoginFailedController.class
 ch\bbbaden\casino\NormalUser.class
 ch\bbbaden\casino\Controller.class
 ch\bbbaden\casino\Model.class
+ch\bbbaden\casino\scenes\RegisterFailedModel.class
 ch\bbbaden\casino\scenes\HomeController.class
 ch\bbbaden\casino\MainApp.class
 ch\bbbaden\casino\games\TestGame2Controller.class

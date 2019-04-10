@@ -17,22 +17,25 @@ public class User {
         this.username = username;
         this.password = password;
 
-        connie = DriverManager.getConnection("jdbc:mysql://localhost:3306/casino", "root", "");
-        statement = connie.createStatement();
-        rs = statement.executeQuery("SELECT * FROM users");
+        openConnection();
 
-        if (username.equals("hans")) {
-            if (password.equals("1234")) {
-                Random rnd = new Random();
-                if (rnd.nextBoolean()) {
-                    throw new SQLException("Zugriff auf die Datenbank ist fehlgeschlagen");
+        statement = connie.createStatement();
+        rs = statement.executeQuery("SELECT * FROM `users`");
+
+        while (rs.next()) {
+            if (rs.getString(1).equals(username)) {
+                try {
+                    if (calculateHash(password).equals(rs.getString(2))) {
+                        return;
+                    } else {
+                        throw new SQLException("Falsches Passwort");
+                    }
+                } catch (NoSuchAlgorithmException e) {
+                    System.err.println(e);
                 }
-            } else {
-                throw new SQLException("Falsches Passwort");
             }
-        } else {
-            throw new SQLException("Benutzer wurde nicht gefunden");
         }
+        throw new SQLException("Benutzer nicht gefunden");
     }
 
 
@@ -44,11 +47,22 @@ public class User {
         return myHash;
     }
 
-    private boolean searchUserExistance(String username) throws SQLException {
+    public void openConnection() throws SQLException {
+        connie = DriverManager.getConnection("jdbc:mysql://localhost:3306/casino", "root", "");
+    }
+
+    public boolean userExists(String username) throws SQLException {
+        statement = connie.createStatement();
+        rs = statement.executeQuery("SELECT * FROM `users`");
         while (rs.next()) {
-            System.out.println("| " + rs.getString(1));
-            System.out.println("|");
+            if (rs.getString(1).equals(username)) {
+                return true;
+            }
         }
         return false;
+    }
+
+    protected String getUsername() {
+        return username;
     }
 }

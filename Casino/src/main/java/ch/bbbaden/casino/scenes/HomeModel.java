@@ -6,6 +6,8 @@ import ch.bbbaden.casino.games.TestGame2Model;
 import ch.bbbaden.casino.games.TestGameModel;
 import ch.bbbaden.casino.Model;
 
+import java.sql.SQLException;
+
 
 class HomeModel extends Model {
 
@@ -20,7 +22,12 @@ class HomeModel extends Model {
     }
 
     String getCoins() {
-        return Integer.toString(normalUser.getCoins());
+        try {
+            return Integer.toString(normalUser.getCoins());
+        } catch (SQLException e) {
+            System.err.println(e);
+        }
+        return null;
     }
 
     void playGame() {
