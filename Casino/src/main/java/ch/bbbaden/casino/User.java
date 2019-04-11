@@ -4,8 +4,6 @@ import javax.xml.bind.DatatypeConverter;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.sql.*;
-import java.util.Random;
-
 public class User {
 
     private String username, password;
@@ -63,7 +61,7 @@ public class User {
 
     public boolean userExists(String username) throws SQLException {
         statement = connie.createStatement();
-        rs = statement.executeQuery("SELECT * FROM `nromalusers`");
+        rs = statement.executeQuery("SELECT * FROM `normalusers`");
         while (rs.next()) {
             if (rs.getString(1).equals(username)) {
                 return true;

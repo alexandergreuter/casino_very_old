@@ -16,22 +16,23 @@ class RegisterModel extends Model {
     private void showErrorMessage(String message) {
         RegisterFailedModel errView = new RegisterFailedModel(message);
         changeScene(errView);
-        if (errView.doRetry()) {
-            show();
-        } else {
+        if (!errView.doRetry()) {
             changeScene(new StartModel());
         }
         errView.close();
     }
 
     public void register(String username, String password, int coins) {
+        if(username.length() >= 20){
+            showErrorMessage("der Benutzername ist zu lang");
+        }
         normalUser = new NormalUser();
         try {
             normalUser.register(username, password, coins);
-        } catch (Exception ex) {
-            System.out.println(ex);
+            normalUser.login(username, password);
+            changeScene(new HomeModel(normalUser));
+        } catch (SQLException ex) {
             showErrorMessage(ex.getLocalizedMessage());
         }
-        changeScene(new HomeModel(normalUser));
     }
 }

@@ -14,8 +14,12 @@ public class RegisterFailedController implements Controller {
     }
 
     public void button_abort_onAction(ActionEvent actionEvent) {
+        registerFailedModel.setRetry(false);
+        registerFailedModel.close();
     }
 
     public void button_retry_onAction(ActionEvent actionEvent) {
+        registerFailedModel.setRetry(true);
+        registerFailedModel.close();
     }
 }

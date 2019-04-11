@@ -2,6 +2,8 @@ package ch.bbbaden.casino.scenes;
 
 import ch.bbbaden.casino.Controller;
 import ch.bbbaden.casino.Model;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -29,7 +31,16 @@ public class LoginController implements Initializable, Controller {
     }
 
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+        username.textProperty().addListener(new ChangeListener<String>() {
+            public void changed(ObservableValue<? extends String> ov, String oldValue, String newValue) {
+                username.setText(newValue.toUpperCase());
+            }
+        });
+        password.textProperty().addListener(new ChangeListener<String>() {
+            public void changed(ObservableValue<? extends String> ov, String oldValue, String newValue) {
+                password.setText(newValue.toUpperCase());
+            }
+        });
     }
 
     @FXML

@@ -4,7 +4,6 @@ import java.security.NoSuchAlgorithmException;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.Random;
 
 public class NormalUser extends User {
 
@@ -19,13 +18,13 @@ public class NormalUser extends User {
         super(false);
     }
 
-
     public void addCoins(int coins) {
         this.coins = coins;
     }
 
     public int getCoins() throws SQLException {
         if (changed) {
+            st = connie.createStatement();
             rs = st.executeQuery("SELECT `coins` FROM `normalusers` WHERE `username` = \"" + super.getUsername() + "\"");
             rs.next();
             changed = false;
@@ -48,12 +47,12 @@ public class NormalUser extends User {
                 try {
                     update = "INSERT INTO `normalusers`(`username`, `password`, `coins`, `purchased`) VALUES ('" + username + "','" + calculateHash(password) + "','" + coins + "','" + coins + "')";
                 } catch (NoSuchAlgorithmException e) {
-                    throw new SQLException("damn critical error");
+                    throw new SQLException("damn, critical error");
                 }
                 st = connie.createStatement();
                 st.executeUpdate(update);
             } catch (SQLException ex) {
-                System.out.println(ex.getLocalizedMessage());
+                throw new SQLException("Fehler bei der Kommunikation mit der Datenbank");
             }
         } else {
             throw new SQLException("User existiert bereits");

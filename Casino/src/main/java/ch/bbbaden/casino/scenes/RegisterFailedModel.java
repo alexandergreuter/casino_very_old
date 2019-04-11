@@ -24,7 +24,7 @@ class RegisterFailedModel extends Model {
         return errorMessage;
     }
 
-    void setRetry(boolean retry) {
+    public void setRetry(boolean retry) {
         this.retry = retry;
     }
 
