@@ -15,6 +15,10 @@ public class NormalUser extends User {
     private ResultSet rs;
     private Statement st;
 
+    public NormalUser() {
+        super(false);
+    }
+
 
     public void addCoins(int coins) {
         this.coins = coins;
@@ -22,7 +26,7 @@ public class NormalUser extends User {
 
     public int getCoins() throws SQLException {
         if (changed) {
-            rs = st.executeQuery("SELECT `coins` FROM `users` WHERE `username` = \"" + super.getUsername() + "\"");
+            rs = st.executeQuery("SELECT `coins` FROM `normalusers` WHERE `username` = \"" + super.getUsername() + "\"");
             rs.next();
             changed = false;
             coins = Integer.parseInt(rs.getString(1));
@@ -42,7 +46,7 @@ public class NormalUser extends User {
         if (!userExists(username)) {
             try {
                 try {
-                    update = "INSERT INTO `users`(`username`, `password`, `coins`, `purchased`) VALUES ('" + username + "','" + calculateHash(password) + "','" + coins + "','" + coins + "')";
+                    update = "INSERT INTO `normalusers`(`username`, `password`, `coins`, `purchased`) VALUES ('" + username + "','" + calculateHash(password) + "','" + coins + "','" + coins + "')";
                 } catch (NoSuchAlgorithmException e) {
                     throw new SQLException("damn critical error");
                 }

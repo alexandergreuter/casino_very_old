@@ -12,6 +12,11 @@ public class User {
     Connection connie;
     private Statement statement;
     private ResultSet rs;
+    private boolean admin;
+
+    public User(boolean admin){
+        this.admin = admin;
+    }
 
     public void login(String username, String password) throws SQLException {
         this.username = username;
@@ -20,7 +25,12 @@ public class User {
         openConnection();
 
         statement = connie.createStatement();
-        rs = statement.executeQuery("SELECT * FROM `users`");
+        if(admin) {
+            rs = statement.executeQuery("SELECT * FROM `adminusers`");
+        }
+        else {
+            rs = statement.executeQuery("SELECT * FROM `normalusers`");
+        }
 
         while (rs.next()) {
             if (rs.getString(1).equals(username)) {
@@ -53,7 +63,7 @@ public class User {
 
     public boolean userExists(String username) throws SQLException {
         statement = connie.createStatement();
-        rs = statement.executeQuery("SELECT * FROM `users`");
+        rs = statement.executeQuery("SELECT * FROM `nromalusers`");
         while (rs.next()) {
             if (rs.getString(1).equals(username)) {
                 return true;
