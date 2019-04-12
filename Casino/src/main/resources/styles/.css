@@ -1,10 +1,14 @@
 @font-face {
+<<<<<<< HEAD
     font-family: 'Casino';
     src: url('../fonts/casino.ttf');
+=======
+    src: url('/fonts/Casino.ttf');
+>>>>>>> backend
 }
 
 * {
-    -fx-font-family: Casino;
+    -fx-font-family: "Casino";
     -fx-font-size: 20px;
 }
 
@@ -18,7 +22,7 @@
 }
 
 #AnchorPane {
-    -fx-background-image: url("../images/background.jpg");
+    -fx-background-image: url("../../java/ch/bbbaden/casino/resources/images/background.jpg");
     -fx-background-repeat: stretch;
     -fx-background-size: 768 432;
     -fx-background-position: center center;
