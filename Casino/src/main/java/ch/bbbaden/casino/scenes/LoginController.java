@@ -11,7 +11,6 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyEvent;
-
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -32,14 +31,14 @@ public class LoginController implements Initializable, Controller {
     }
 
     public void initialize(URL url, ResourceBundle rb) {
-        limitInput(username);
-        limitInput(password);
-    }
-
-    private void limitInput(final TextField textField) {
-        textField.textProperty().addListener(new ChangeListener<String>() {
+        username.textProperty().addListener(new ChangeListener<String>() {
             public void changed(ObservableValue<? extends String> ov, String oldValue, String newValue) {
-                textField.setText(newValue.toUpperCase());
+                username.setText(newValue.toUpperCase());
+            }
+        });
+        password.textProperty().addListener(new ChangeListener<String>() {
+            public void changed(ObservableValue<? extends String> ov, String oldValue, String newValue) {
+                password.setText(newValue.toUpperCase());
             }
         });
     }

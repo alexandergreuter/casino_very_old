@@ -37,10 +37,16 @@ public class RegisterController implements Initializable, Controller {
      */
 
     public void initialize(URL url, ResourceBundle rb) {
-
-        limitInput(password);
-        limitInput(username);
-
+        username.textProperty().addListener(new ChangeListener<String>() {
+            public void changed(ObservableValue<? extends String> ov, String oldValue, String newValue) {
+                username.setText(newValue.toUpperCase());
+            }
+        });
+        password.textProperty().addListener(new ChangeListener<String>() {
+            public void changed(ObservableValue<? extends String> ov, String oldValue, String newValue) {
+                password.setText(newValue.toUpperCase());
+            }
+        });
         startCoins.textProperty().addListener(new ChangeListener<String>() {
             public void changed(ObservableValue<? extends String> ov, String oldValue, String newValue) {
                 if (!newValue.matches("[0-9]*")) {
@@ -50,17 +56,6 @@ public class RegisterController implements Initializable, Controller {
         });
     }
 
-    private void limitInput(final TextField textField) {
-        textField.textProperty().addListener(new ChangeListener<String>() {
-            public void changed(ObservableValue<? extends String> ov, String oldValue, String newValue) {
-                if (newValue.length() >= 20) {
-                    textField.setText(oldValue);
-                } else {
-                    textField.setText(newValue.toUpperCase());
-                }
-            }
-        });
-    }
 
     public void update(Model model) {
         registerModel = (RegisterModel) model;
