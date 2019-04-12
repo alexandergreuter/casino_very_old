@@ -69,4 +69,8 @@ public class RegisterController implements Initializable, Controller {
     public void on_register(ActionEvent actionEvent) throws NumberFormatException {
         registerModel.register(username.getText(), password.getText(), Integer.parseInt(startCoins.getText()));
     }
+
+    public void btn_back_onAction(ActionEvent actionEvent) {
+        registerModel.showStartMenu();
+    }
 }

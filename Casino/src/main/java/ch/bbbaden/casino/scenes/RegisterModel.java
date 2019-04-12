@@ -35,4 +35,8 @@ class RegisterModel extends Model {
             showErrorMessage(ex.getLocalizedMessage());
         }
     }
+
+    void showStartMenu() {
+        changeScene(new StartModel());
+    }
 }
