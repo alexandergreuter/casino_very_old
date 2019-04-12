@@ -8,7 +8,7 @@ and open the template in the editor.
     Author     : felix
 */
 #AnchorPane {
-    -fx-background-image: url("../images/background_menu.png");
+    -fx-background-image: url("../../java/ch/bbbaden/casino/resources/images/background_menu.png");
     -fx-background-repeat: stretch;
     -fx-background-size: 768 432;
     -fx-background-position: center center;
