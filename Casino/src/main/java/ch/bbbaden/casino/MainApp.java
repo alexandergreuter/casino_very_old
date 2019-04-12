@@ -2,6 +2,7 @@ package ch.bbbaden.casino;
 
 import ch.bbbaden.casino.scenes.StartModel;
 import javafx.application.Application;
+import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
 public class MainApp extends Application {
