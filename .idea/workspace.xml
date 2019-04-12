@@ -1,44 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6dd1a1d4-2d01-4c33-ae29-a134fa0d26ec" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Casino/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Casino/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Casino/src/main/java/ch/bbbaden/casino/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/Casino/src/main/java/ch/bbbaden/casino/MainApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Casino/src/main/java/ch/bbbaden/casino/scenes/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Casino/src/main/java/ch/bbbaden/casino/scenes/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Casino/src/main/java/ch/bbbaden/casino/scenes/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Casino/src/main/java/ch/bbbaden/casino/scenes/RegisterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Casino/target/casino-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Casino/target/casino-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Casino/target/classes/ch/bbbaden/casino/MainApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/Casino/target/classes/ch/bbbaden/casino/MainApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Casino/target/classes/ch/bbbaden/casino/scenes/LoginController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Casino/target/classes/ch/bbbaden/casino/scenes/LoginController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Casino/target/classes/ch/bbbaden/casino/scenes/LoginController$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Casino/target/classes/ch/bbbaden/casino/scenes/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Casino/target/classes/ch/bbbaden/casino/scenes/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Casino/target/classes/ch/bbbaden/casino/scenes/RegisterController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Casino/target/classes/ch/bbbaden/casino/scenes/RegisterController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Casino/target/classes/ch/bbbaden/casino/scenes/RegisterController$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/Casino/target/classes/ch/bbbaden/casino/scenes/RegisterController$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Casino/target/classes/ch/bbbaden/casino/scenes/RegisterController$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Casino/target/classes/ch/bbbaden/casino/scenes/RegisterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Casino/target/classes/ch/bbbaden/casino/scenes/RegisterController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Casino/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Casino/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-    </list>
+    <list default="true" id="78231e80-de45-4d2c-a44f-c2e45f084a1c" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Casino/src/main/java/ch/bbbaden/casino/MainApp.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="953" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
+    <option name="x" value="952" />
+    <option name="width" value="976" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -47,88 +23,7 @@
     <panes>
       <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Casino" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Casino" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Casino" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Casino" type="462c0819:PsiDirectoryNode" />
-              <item name="Casino" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Casino" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Casino" type="462c0819:PsiDirectoryNode" />
-              <item name="Casino" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Casino" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Casino" type="462c0819:PsiDirectoryNode" />
-              <item name="Casino" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Casino" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Casino" type="462c0819:PsiDirectoryNode" />
-              <item name="Casino" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Casino" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Casino" type="462c0819:PsiDirectoryNode" />
-              <item name="Casino" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ch" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Casino" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Casino" type="462c0819:PsiDirectoryNode" />
-              <item name="Casino" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ch" type="462c0819:PsiDirectoryNode" />
-              <item name="bbbaden" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Casino" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Casino" type="462c0819:PsiDirectoryNode" />
-              <item name="Casino" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ch" type="462c0819:PsiDirectoryNode" />
-              <item name="bbbaden" type="462c0819:PsiDirectoryNode" />
-              <item name="casino" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Casino" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Casino" type="462c0819:PsiDirectoryNode" />
-              <item name="Casino" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Casino" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Casino" type="462c0819:PsiDirectoryNode" />
-              <item name="Casino" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -154,73 +49,52 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6dd1a1d4-2d01-4c33-ae29-a134fa0d26ec" name="Default Changelist" comment="" />
-      <created>1554974195075</created>
+      <changelist id="78231e80-de45-4d2c-a44f-c2e45f084a1c" name="Default Changelist" comment="" />
+      <created>1555069482427</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1554974195075</updated>
-      <workItem from="1554974196483" duration="74000" />
+      <updated>1555069482427</updated>
+      <workItem from="1555069485896" duration="250000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74000" />
+    <option name="totallyTimeSpent" value="250000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <layout>
-      <window_info id="Image Layers" order="0" />
-      <window_info id="Designer" order="1" />
-      <window_info id="UI Designer" order="2" />
-      <window_info id="Capture Tool" order="3" />
-      <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.35" />
-      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="1" />
-      <window_info anchor="bottom" id="Terminal" order="2" />
-      <window_info anchor="bottom" id="Database Changes" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="5" />
-      <window_info anchor="bottom" id="Find" order="6" />
-      <window_info anchor="bottom" id="Run" order="7" />
-      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="11" />
-      <window_info anchor="right" id="Palette" order="0" />
-      <window_info anchor="right" id="Theme Preview" order="1" />
-      <window_info anchor="right" id="Capture Analysis" order="2" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
-      <window_info anchor="right" id="Database" order="5" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973147" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Casino/src/main/java/ch/bbbaden/casino/MainApp.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>
