@@ -10,20 +10,16 @@ import ch.bbbaden.casino.Model;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
-import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
-
-import java.net.URL;
-import java.util.ResourceBundle;
 
 /**
  * FXML Controller class
  *
  * @author felix
  */
-public class RegisterController implements Initializable, Controller {
+public class RegisterController implements Controller {
 
     public Button login;
     public TextField username;
@@ -31,24 +27,6 @@ public class RegisterController implements Initializable, Controller {
     public PasswordField password;
     public TextField startCoins;
     RegisterModel registerModel;
-
-    /**
-     * Initializes the controller class.
-     */
-
-    public void initialize(URL url, ResourceBundle rb) {
-
-        limitInput(password);
-        limitInput(username);
-
-        startCoins.textProperty().addListener(new ChangeListener<String>() {
-            public void changed(ObservableValue<? extends String> ov, String oldValue, String newValue) {
-                if (!newValue.matches("[0-9]*")) {
-                    startCoins.setText(oldValue);
-                }
-            }
-        });
-    }
 
     private void limitInput(final TextField textField) {
         textField.textProperty().addListener(new ChangeListener<String>() {
@@ -62,11 +40,27 @@ public class RegisterController implements Initializable, Controller {
         });
     }
 
-    public void update(Model model) {
-        registerModel = (RegisterModel) model;
-    }
-
     public void on_register(ActionEvent actionEvent) throws NumberFormatException {
         registerModel.register(username.getText(), password.getText(), Integer.parseInt(startCoins.getText()));
+    }
+
+    public void update() {
+
+    }
+
+    public void initialize(Model model) {
+
+        registerModel = (RegisterModel) model;
+
+        limitInput(password);
+        limitInput(username);
+
+        startCoins.textProperty().addListener(new ChangeListener<String>() {
+            public void changed(ObservableValue<? extends String> ov, String oldValue, String newValue) {
+                if (!newValue.matches("[0-9]*")) {
+                    startCoins.setText(oldValue);
+                }
+            }
+        });
     }
 }

@@ -8,7 +8,6 @@ package ch.bbbaden.casino.scenes;
 import ch.bbbaden.casino.Controller;
 import ch.bbbaden.casino.Model;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 
@@ -20,7 +19,7 @@ import java.util.ResourceBundle;
  *
  * @author felix
  */
-public class LoginFailedController implements Initializable, Controller {
+public class LoginFailedController implements Controller {
 
     public Button button_retry;
     @FXML
@@ -49,7 +48,11 @@ public class LoginFailedController implements Initializable, Controller {
         loginFailedModel.close();
     }
 
-    public void update(Model model) {
+    public void update() {
+
+    }
+
+    public void initialize(Model model) {
         loginFailedModel = (LoginFailedModel) model;
         errorMessage.setText(loginFailedModel.getErrorMessage());
     }
