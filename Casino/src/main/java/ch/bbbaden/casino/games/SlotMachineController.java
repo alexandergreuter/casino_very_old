@@ -7,8 +7,11 @@ public class SlotMachineController implements Controller {
 
     private SlotMachineModel slotMachineModel;
 
-    public void update(Model model) {
-        slotMachineModel = (SlotMachineModel) model;
+    public void update() {
 
+    }
+
+    public void initialize(Model model) {
+        slotMachineModel = (SlotMachineModel) model;
     }
 }
