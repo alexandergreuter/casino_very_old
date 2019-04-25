@@ -9,6 +9,5 @@ public class ShopController implements Controller {
     }
 
     public void initialize(Model model) {
-
     }
 }
