@@ -29,7 +29,7 @@ import java.util.ResourceBundle;
  * @author felix
  */
 public class HomeController implements Controller {
-    
+
     public Button btn_play;
     public Label coins;
     public ImageView game_image;
@@ -78,5 +78,13 @@ public class HomeController implements Controller {
                 translateTransition
         );
         parallelTransition.play();
+    }
+
+    public void update() {
+
+    }
+
+    public void initialize(Model model) {
+        homeModel = (HomeModel) model;
     }
 }
