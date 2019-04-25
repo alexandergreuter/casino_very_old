@@ -28,7 +28,7 @@ import java.util.ResourceBundle;
  *
  * @author felix
  */
-public class HomeController implements Initializable, Controller {
+public class HomeController implements Controller {
 
     public Button btn_play;
     public Label coins;
@@ -39,13 +39,6 @@ public class HomeController implements Initializable, Controller {
     private Pane gameView;
 
     private HomeModel homeModel;
-
-    /**
-     * Initializes the controller class.
-     */
-    public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    }
 
     public void update(Model model) {
         homeModel = (HomeModel) model;
@@ -85,5 +78,13 @@ public class HomeController implements Initializable, Controller {
                 translateTransition
         );
         parallelTransition.play();
+    }
+
+    public void update() {
+
+    }
+
+    public void initialize(Model model) {
+        homeModel = (HomeModel) model;
     }
 }

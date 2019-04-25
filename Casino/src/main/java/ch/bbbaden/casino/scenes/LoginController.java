@@ -15,7 +15,7 @@ import javafx.scene.input.KeyEvent;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class LoginController implements Initializable, Controller {
+public class LoginController implements Controller {
 
     public Button btn_back;
     private Label label;
@@ -31,10 +31,6 @@ public class LoginController implements Initializable, Controller {
     private void handleButtonAction(ActionEvent event) {
     }
 
-    public void initialize(URL url, ResourceBundle rb) {
-        limitInput(username);
-        limitInput(password);
-    }
 
     private void limitInput(final TextField textField) {
         textField.textProperty().addListener(new ChangeListener<String>() {
@@ -74,5 +70,14 @@ public class LoginController implements Initializable, Controller {
 
     public void btn_back_onAction(ActionEvent actionEvent) {
         loginModel.showStartMenu();
+    }
+
+    public void update() {
+
+    }
+
+    public void initialize(Model model) {
+        limitInput(username);
+        limitInput(password);
     }
 }
