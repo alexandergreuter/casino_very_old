@@ -5,18 +5,15 @@ import ch.bbbaden.casino.Model;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
-import java.net.URL;
 import java.util.ArrayList;
-import java.util.ResourceBundle;
 
-public class RouletteController implements Controller, Initializable {
+public class RouletteController implements Controller {
 
     public Button besbutt;
     public Button abbbutt;
@@ -27,7 +24,7 @@ public class RouletteController implements Controller, Initializable {
     private GridPane gridPane;
 
     public void update(Model model) {
-        rouletteModel = (RouletteModel) model;
+
     }
 
     private void handleButtonAction(Button button, ActionEvent actionEvent) {
@@ -43,7 +40,25 @@ public class RouletteController implements Controller, Initializable {
         iv.setScaleY(0.1);
     }
 
-    public void initialize(URL location, ResourceBundle resources) {
+    public void abbmethod(ActionEvent actionEvent) {
+        Stage stage = (Stage) abbbutt.getScene().getWindow();
+        stage.close();
+    }
+
+    public void jet50method(ActionEvent actionEvent) {
+
+    }
+
+    public void jet25method(ActionEvent actionEvent) {
+    }
+
+    public void update() {
+
+    }
+
+    public void initialize(Model model) {
+
+        rouletteModel = (RouletteModel) model;
 
         int rows = gridPane.getRowConstraints().size();
         int columns = gridPane.getColumnConstraints().size();
@@ -60,17 +75,5 @@ public class RouletteController implements Controller, Initializable {
                 button.setMaxSize(Double.MAX_VALUE, Double.MAX_VALUE);
             }
         }
-    }
-
-    public void abbmethod(ActionEvent actionEvent) {
-        Stage stage = (Stage) abbbutt.getScene().getWindow();
-        stage.close();
-    }
-
-    public void jet50method(ActionEvent actionEvent) {
-
-    }
-
-    public void jet25method(ActionEvent actionEvent) {
     }
 }
