@@ -8,11 +8,6 @@ public class RegisterFailedController implements Controller {
 
     RegisterFailedModel registerFailedModel;
 
-    public void update(Model model) {
-        registerFailedModel = (RegisterFailedModel) model;
-        registerFailedModel.getErrorMessage();
-    }
-
     public void button_abort_onAction(ActionEvent actionEvent) {
         registerFailedModel.setRetry(false);
         registerFailedModel.close();
@@ -21,5 +16,14 @@ public class RegisterFailedController implements Controller {
     public void button_retry_onAction(ActionEvent actionEvent) {
         registerFailedModel.setRetry(true);
         registerFailedModel.close();
+    }
+
+    public void update() {
+
+    }
+
+    public void initialize(Model model) {
+        registerFailedModel = (RegisterFailedModel) model;
+        registerFailedModel.getErrorMessage();
     }
 }
