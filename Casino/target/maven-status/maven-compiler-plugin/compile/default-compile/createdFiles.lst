@@ -1,3 +1,4 @@
+ch\bbbaden\casino\games\PennyPusherModel.class
 ch\bbbaden\casino\scenes\RegisterFailedController.class
 ch\bbbaden\casino\scenes\RegisterController$1.class
 ch\bbbaden\casino\scenes\RegisterModel.class
@@ -25,3 +26,4 @@ ch\bbbaden\casino\scenes\RegisterController.class
 ch\bbbaden\casino\games\Game.class
 ch\bbbaden\casino\AdminUser.class
 ch\bbbaden\casino\ModelManager.class
+ch\bbbaden\casino\games\PennyPusherController.class
