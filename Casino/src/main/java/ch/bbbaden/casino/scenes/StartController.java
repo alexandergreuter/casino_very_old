@@ -52,7 +52,11 @@ public class StartController implements Initializable, Controller {
     private void adminLogin(ActionEvent event) {
     }
 
-    public void update(Model model) {
+    public void update() {
+
+    }
+
+    public void initialize(Model model) {
         this.model = (StartModel) model;
     }
 }
