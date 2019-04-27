@@ -49,7 +49,7 @@ public class Model {
     }
 
     void showAndWait() {
-        notifyController();
+        controller.initialize(this);
         stage.showAndWait();
     }
 
