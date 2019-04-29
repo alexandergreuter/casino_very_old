@@ -49,7 +49,6 @@ public class RegisterController implements Controller {
     }
 
     public void initialize(Model model) {
-
         registerModel = (RegisterModel) model;
 
         limitInput(password);
