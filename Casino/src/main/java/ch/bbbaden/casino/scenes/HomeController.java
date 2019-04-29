@@ -40,12 +40,6 @@ public class HomeController implements Controller {
 
     private HomeModel homeModel;
 
-    public void update(Model model) {
-        homeModel = (HomeModel) model;
-        coins.setText(homeModel.getCoins());
-        game_image.setImage(new Image(homeModel.getImagePath()));
-    }
-
     public void btn_play_onAction(ActionEvent actionEvent) {
         homeModel.playGame();
     }
@@ -81,10 +75,12 @@ public class HomeController implements Controller {
     }
 
     public void update() {
-
+        coins.setText(homeModel.getCoins());
+        game_image.setImage(new Image(homeModel.getImagePath()));
     }
 
     public void initialize(Model model) {
         homeModel = (HomeModel) model;
+        update();
     }
 }
