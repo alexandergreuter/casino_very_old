@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<AnchorPane fx:id="anchorPane" prefHeight="411.0" prefWidth="701.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.bbbaden.casino.games.RouletteController">
+<AnchorPane fx:id="anchorPane" prefHeight="411.0" prefWidth="701.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.bbbaden.casino.games.RouletteController">
    <children>
       <ImageView fitHeight="611.0" fitWidth="916.0" layoutX="-4.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -22,16 +22,6 @@
       </ImageView>
       <Button layoutX="368.0" layoutY="323.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="31.0" text="Button" visible="false" />
       <Button layoutX="368.0" layoutY="236.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="31.0" text="Button" visible="false" />
-      <ImageView fitHeight="217.0" fitWidth="208.0" layoutX="-42.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../images/jetons-25.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="187.0" fitWidth="210.0" layoutX="100.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../images/jetons-50.png" />
-         </image>
-      </ImageView>
       <Button fx:id="besbutt" layoutX="305.0" layoutY="17.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="157.0" text="Bestätigen" />
       <Button fx:id="abbbutt" layoutX="481.0" layoutY="17.0" mnemonicParsing="false" onAction="#abbmethod" prefHeight="62.0" prefWidth="158.0" text="Abbrechen" />
       <GridPane fx:id="gridPane" layoutX="380.0" layoutY="247.0" prefHeight="228.0" prefWidth="435.0">
@@ -76,5 +66,30 @@
       </GridPane>
       <Button fx:id="jet50" layoutX="110.0" layoutY="103.0" mnemonicParsing="false" onAction="#jet50method" prefHeight="83.0" prefWidth="68.0" text="Button" visible="false" />
       <Button fx:id="jet25" layoutX="39.0" layoutY="116.0" mnemonicParsing="false" onAction="#jet25method" prefHeight="70.0" prefWidth="62.0" text="Button" visible="false" />
+      <ImageView fitHeight="70.0" fitWidth="67.0" layoutX="134.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/jetons-10.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="79.0" fitWidth="67.0" layoutX="60.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/jetons-5.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="79.0" fitWidth="68.0" layoutX="53.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/jetons-25.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="86.0" fitWidth="68.0" layoutX="131.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/jetons-50.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="86.0" fitWidth="80.0" layoutX="97.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/jetons-100.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
