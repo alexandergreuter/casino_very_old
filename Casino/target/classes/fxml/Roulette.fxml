@@ -66,34 +66,34 @@
             <RowConstraints maxHeight="106.40000915527344" minHeight="10.0" prefHeight="28.400006103515636" vgrow="SOMETIMES" />
         </rowConstraints>
       </GridPane>
-      <ImageView fitHeight="107.0" fitWidth="86.0" layoutX="129.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../images/Roulette_Bilder/jetons-10.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="107.0" fitWidth="86.0" layoutX="10.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../images/Roulette_Bilder/jetons-50.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="107.0" fitWidth="86.0" layoutX="155.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../images/Roulette_Bilder/jetons-100.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="107.0" fitWidth="86.0" layoutX="79.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../images/Roulette_Bilder/jetons-25.png" />
-         </image>
-      </ImageView>
       <Label layoutX="650.0" layoutY="17.0" prefHeight="32.0" prefWidth="208.0" text=" Dein Geldbetrag:" textFill="WHITE">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <ImageView fx:id="jeton5" fitHeight="107.0" fitWidth="86.0" layoutX="53.0" layoutY="-6.0" onMouseClicked="#jetons5_onAction" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="jeton5" fitHeight="101.0" fitWidth="81.0" layoutX="55.0" layoutY="-3.0" onMouseClicked="#handleJeton5" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/Roulette_Bilder/Jetons-5.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="jeton25" fitHeight="101.0" fitWidth="81.0" layoutX="15.0" layoutY="79.0" onMouseClicked="#handleJeton25" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Roulette_Bilder/jetons-25.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="jeton50" fitHeight="101.0" fitWidth="74.0" layoutX="102.0" layoutY="79.0" onMouseClicked="#handleJeton50" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Roulette_Bilder/jetons-50.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="jeton100" fitHeight="101.0" fitWidth="81.0" layoutX="197.0" layoutY="71.0" onMouseClicked="#handleJeton100" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Roulette_Bilder/jetons-100.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="jeton10" fitHeight="101.0" fitWidth="81.0" layoutX="143.0" layoutY="-3.0" onMouseClicked="#handleJeton10" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Roulette_Bilder/jetons-10.png" />
          </image>
       </ImageView>
    </children>
