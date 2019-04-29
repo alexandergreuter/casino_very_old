@@ -5,6 +5,7 @@
  */
 package ch.bbbaden.casino.scenes;
 
+import ch.bbbaden.casino.Controller;
 import ch.bbbaden.casino.Model;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
@@ -18,7 +19,7 @@ import javafx.scene.control.TextField;
  *
  * @author felix
  */
-public class RegisterController{
+public class RegisterController implements Controller {
 
     public Button login;
     public TextField username;

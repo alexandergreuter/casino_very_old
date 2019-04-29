@@ -5,6 +5,7 @@
  */
 package ch.bbbaden.casino.scenes;
 
+import ch.bbbaden.casino.Controller;
 import ch.bbbaden.casino.Model;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -18,7 +19,7 @@ import java.util.ResourceBundle;
  *
  * @author felix
  */
-public class StartController {
+public class StartController implements Controller {
 
     @FXML
     private Button login;
