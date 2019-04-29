@@ -4,7 +4,6 @@ import ch.bbbaden.casino.NormalUser;
 import ch.bbbaden.casino.games.BaccaratModel;
 import ch.bbbaden.casino.games.Game;
 import ch.bbbaden.casino.Model;
-import ch.bbbaden.casino.games.PennyPusherModel;
 
 import java.sql.SQLException;
 
@@ -18,7 +17,7 @@ class HomeModel extends Model {
     HomeModel(NormalUser normalUser) {
         super("/fxml/Home.fxml", "Welcome", true);
         this.normalUser = normalUser;
-        games = new Game[]{new PennyPusherModel(normalUser), new BaccaratModel(normalUser), new SlotMachineModel(normalUser), new RouletteModel(normalUser)};
+        games = new Game[]{new BaccaratModel(normalUser)};
     }
 
     String getCoins() {

@@ -2,29 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4fe1bce-5962-4d5a-9500-1b3f2ac8f087" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/games/PennyPusherController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/games/PennyPusherModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/scenes/AdminController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fxml/PennyPusher.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/MainApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/games/TestGame2Controller.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/games/TestGame2Model.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/games/TestGameController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/games/TestGameModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/games/PennyPusherController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/games/PennyPusherModel.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/scenes/HomeModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/scenes/HomeModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/scenes/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/scenes/RegisterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/scenes/RegisterModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/scenes/RegisterModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/Admin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/Admin.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/Register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/Register.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/Start.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/Start.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ch/bbbaden/casino/MainApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ch/bbbaden/casino/MainApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ch/bbbaden/casino/scenes/HomeModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ch/bbbaden/casino/scenes/HomeModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ch/bbbaden/casino/scenes/RegisterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ch/bbbaden/casino/scenes/RegisterController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ch/bbbaden/casino/scenes/RegisterModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ch/bbbaden/casino/scenes/RegisterModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fxml/Admin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/Admin.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fxml/Register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/Register.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fxml/Start.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/Start.fxml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -42,8 +22,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/scenes/HomeModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="20" column="143" selection-start-line="20" selection-start-column="143" selection-end-line="20" selection-end-column="143" />
+            <state relative-caret-position="-221">
+              <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/Controller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -60,6 +49,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="lijan" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -102,7 +96,44 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="casino" type="58d84e3e:PackageViewProjectNode" />
+              <item name="casino" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="casino" type="58d84e3e:PackageViewProjectNode" />
+              <item name="casino" type="616d4139:PackageViewModuleNode" />
+              <item name="ch.bbbaden.casino" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="casino" type="58d84e3e:PackageViewProjectNode" />
+              <item name="casino" type="616d4139:PackageViewModuleNode" />
+              <item name="ch.bbbaden.casino" type="1f31426a:PackageElementNode" />
+              <item name="games" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="casino" type="58d84e3e:PackageViewProjectNode" />
+              <item name="casino" type="616d4139:PackageViewModuleNode" />
+              <item name="ch.bbbaden.casino" type="1f31426a:PackageElementNode" />
+              <item name="scenes" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="casino" type="58d84e3e:PackageViewProjectNode" />
+              <item name="casino" type="616d4139:PackageViewModuleNode" />
+              <item name="fxml" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="casino" type="58d84e3e:PackageViewProjectNode" />
+              <item name="casino" type="616d4139:PackageViewModuleNode" />
+              <item name="images" type="1f31426a:PackageElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -226,13 +257,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9027000" />
+    <option name="totallyTimeSpent" value="9090000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18313642" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1858217" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -281,13 +312,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/games/TestGame2Model.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/games/TestGame2Model.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_202/src.zip!/java/sql/ResultSet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -448,12 +473,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/games/PennyPusherController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
+        <state relative-caret-position="161">
           <caret line="9" column="52" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#243#244#0" expanded="true" />
-            <element signature="e#302#303#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -489,10 +512,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/scenes/HomeModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="20" column="143" selection-start-line="20" selection-start-column="143" selection-end-line="20" selection-end-column="143" />
+        <state relative-caret-position="-221">
+          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
         </state>
       </provider>
     </entry>
