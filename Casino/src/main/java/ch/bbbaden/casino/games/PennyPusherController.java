@@ -21,7 +21,6 @@ public class PennyPusherController implements Controller {
     public Button btn_slot3;
     public Button btn_push;
 
-    private int[][] lastField = {{0}, {0}};
     private PennyPusherModel pennyPusherModel;
 
     private void updateField(int[][] curField) {
@@ -34,7 +33,6 @@ public class PennyPusherController implements Controller {
                 }
             }
         }
-        lastField = curField;
     }
 
     private Label getFieldLabel(final int row, final int column) {
