@@ -1,2 +1,2 @@
-# Casino
-Ein kleines Casino Spiel. Projektarbeit für schule.
+#Casino
+Schulprojekt: Casino mit mehreren Minispielen
