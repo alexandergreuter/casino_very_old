@@ -12,7 +12,6 @@ import javafx.animation.ParallelTransition;
 import javafx.animation.TranslateTransition;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
@@ -20,15 +19,12 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 import javafx.util.Duration;
 
-import java.net.URL;
-import java.util.ResourceBundle;
-
 /**
  * FXML Controller class
  *
  * @author felix
  */
-public class HomeController implements Initializable, Controller {
+public class HomeController implements Controller {
 
     public Button btn_play;
     public Label coins;
@@ -39,19 +35,6 @@ public class HomeController implements Initializable, Controller {
     private Pane gameView;
 
     private HomeModel homeModel;
-
-    /**
-     * Initializes the controller class.
-     */
-    public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    }
-
-    public void update(Model model) {
-        homeModel = (HomeModel) model;
-        coins.setText(homeModel.getCoins());
-        game_image.setImage(new Image(homeModel.getImagePath()));
-    }
 
     public void btn_play_onAction(ActionEvent actionEvent) {
         homeModel.playGame();
@@ -85,5 +68,14 @@ public class HomeController implements Initializable, Controller {
                 translateTransition
         );
         parallelTransition.play();
+    }
+
+    public void update() {
+        coins.setText(homeModel.getCoins());
+        game_image.setImage(new Image(homeModel.getImagePath()));
+    }
+
+    public void initialize(Model model) {
+        homeModel = (HomeModel) model;
     }
 }

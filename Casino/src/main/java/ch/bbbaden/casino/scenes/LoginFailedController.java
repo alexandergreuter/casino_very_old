@@ -8,19 +8,15 @@ package ch.bbbaden.casino.scenes;
 import ch.bbbaden.casino.Controller;
 import ch.bbbaden.casino.Model;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-
-import java.net.URL;
-import java.util.ResourceBundle;
 
 /**
  * FXML Controller class
  *
  * @author felix
  */
-public class LoginFailedController implements Initializable, Controller {
+public class LoginFailedController implements Controller {
 
     public Button button_retry;
     @FXML
@@ -31,13 +27,6 @@ public class LoginFailedController implements Initializable, Controller {
     private Button button_abort1;
 
     private LoginFailedModel loginFailedModel;
-
-    /**
-     * Initializes the controller class.
-     */
-    public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    }
 
     public void button_abort_onAction() {
         loginFailedModel.setRetry(false);
@@ -51,6 +40,15 @@ public class LoginFailedController implements Initializable, Controller {
 
     public void update(Model model) {
         loginFailedModel = (LoginFailedModel) model;
+
+    }
+
+    public void update() {
         errorMessage.setText(loginFailedModel.getErrorMessage());
+    }
+
+    public void initialize(Model model) {
+        loginFailedModel = (LoginFailedModel) model;
+        update();
     }
 }
