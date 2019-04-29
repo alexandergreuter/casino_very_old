@@ -6,7 +6,9 @@ import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
@@ -18,6 +20,7 @@ public class RouletteController implements Controller {
     public Button besbutt;
     public Button abbbutt;
     public AnchorPane anchorPane;
+    public ImageView jeton5;
     private RouletteModel rouletteModel;
     private ArrayList<Button> buttons = new ArrayList<Button>();
     @FXML
@@ -45,13 +48,6 @@ public class RouletteController implements Controller {
         stage.close();
     }
 
-    public void jet50method(ActionEvent actionEvent) {
-
-    }
-
-    public void jet25method(ActionEvent actionEvent) {
-    }
-
     public void update() {
 
     }
@@ -75,5 +71,9 @@ public class RouletteController implements Controller {
                 button.setMaxSize(Double.MAX_VALUE, Double.MAX_VALUE);
             }
         }
+    }
+
+    public void jeton5click(MouseEvent mouseEvent) {
+        jeton5.setImage(new Image("/images/Roulette_Bilder/Jetons5-Ausgewählt.png"));
     }
 }
