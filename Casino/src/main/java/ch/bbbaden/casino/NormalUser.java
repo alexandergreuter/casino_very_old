@@ -19,7 +19,7 @@ public class NormalUser extends User {
     }
 
     public void addCoins(int coins) {
-        this.coins = coins;
+        this.coins += coins;
     }
 
     public int getCoins() throws SQLException {
