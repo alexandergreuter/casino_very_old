@@ -77,5 +77,6 @@ public class HomeController implements Controller {
 
     public void initialize(Model model) {
         homeModel = (HomeModel) model;
+        update();
     }
 }

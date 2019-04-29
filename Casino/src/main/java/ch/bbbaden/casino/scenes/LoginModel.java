@@ -57,6 +57,7 @@ class LoginModel extends Model {
 
     String getPassword() {
         return password;
+
     }
 
     void showStartMenu() {
