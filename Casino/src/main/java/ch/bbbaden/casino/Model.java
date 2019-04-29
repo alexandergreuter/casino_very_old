@@ -43,7 +43,7 @@ public class Model {
     }
 
     protected void show() {
-        notifyController();
+        controller.initialize(this);
         if (isPrimary) stage.show();
         else stage.showAndWait();
     }
@@ -62,7 +62,7 @@ public class Model {
     }
 
     protected void notifyController() {
-        controller.update(this);
+        controller.update();
     }
 
     public void close() {
