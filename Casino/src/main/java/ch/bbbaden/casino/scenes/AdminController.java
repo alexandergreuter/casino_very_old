@@ -7,4 +7,12 @@ public class AdminController implements Controller {
     public void update(Model model) {
 
     }
+
+    public void update() {
+
+    }
+
+    public void initialize(Model model) {
+
+    }
 }

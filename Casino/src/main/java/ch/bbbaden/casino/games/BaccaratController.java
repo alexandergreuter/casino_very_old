@@ -4,9 +4,17 @@ import ch.bbbaden.casino.Controller;
 import ch.bbbaden.casino.Model;
 
 public class BaccaratController implements Controller {
-    BaccaratModel baccaratModel;
+    private BaccaratModel baccaratModel;
 
     public void update(Model model) {
         baccaratModel = (BaccaratModel) model;
+    }
+
+    public void update() {
+
+    }
+
+    public void initialize(Model model) {
+
     }
 }
