@@ -1,16 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.bbbaden.casino.games.BaccaratController">
     <stylesheets>
         <URL value="@/styles/BasicStyle.css" />
     </stylesheets>
    <children>
-      <ImageView fitHeight="150.0" fitWidth="100.0" layoutX="73.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="150.0" fitWidth="100.0" layoutX="271.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="150.0" fitWidth="100.0" layoutX="419.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="ersteKarte" fitHeight="150.0" fitWidth="100.0" layoutX="175.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/cards/2C.png" />
+         </image></ImageView>
+      <ImageView fx:id="zweiteKarte" fitHeight="150.0" fitWidth="100.0" layoutX="301.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/cards/2D.png" />
+         </image></ImageView>
+      <ImageView fx:id="dritteKarte" fitHeight="150.0" fitWidth="100.0" layoutX="416.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/cards/2H.png" />
+         </image></ImageView>
+      <Button layoutX="318.0" layoutY="67.0" mnemonicParsing="false" text="Button" />
    </children>
 </AnchorPane>
