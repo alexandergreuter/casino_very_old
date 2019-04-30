@@ -5,12 +5,15 @@ import ch.bbbaden.casino.Model;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.geometry.Point2D;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
+import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
 
 import java.util.ArrayList;
@@ -18,31 +21,45 @@ import java.util.ArrayList;
 public class RouletteController implements Controller {
 
     public ImageView jeton100;
+    public Button btn_block;
+    public Label anzeige_geldbetrag;
     SelectedJeton selectedJeton;
 
-    public Button besbutt;
-    public Button abbbutt;
     public AnchorPane anchorPane;
     public ImageView jeton5;
     public ImageView jeton25;
     public ImageView jeton50;
-    public ImageView jeton1001;
     public ImageView jeton10;
     private RouletteModel rouletteModel;
     private ArrayList<Button> buttons = new ArrayList<Button>();
     @FXML
     private GridPane gridPane;
-
-    public void update(Model model) {
-
-    }
+    private boolean jetonausg = false;
+    private String image = "";
 
     private void handleButtonAction(Button button, ActionEvent actionEvent) {
         System.out.println(button);
-        ImageView iv = new ImageView("/images/jeton-red.png");
+        ImageView iv = new ImageView(image);
         System.out.println(GridPane.getColumnIndex(button));
         System.out.println(GridPane.getRowIndex(button));
-        gridPane.add(iv, GridPane.getColumnIndex(button), GridPane.getRowIndex(button));
+        anchorPane.getChildren().add(iv);
+        double nodeMinX = button.getLayoutBounds().getMinX();
+        double nodeMinY = button.getLayoutBounds().getMinY();
+        Point2D nodeInScene = button.localToScene(nodeMinX, nodeMinY);
+
+        double gridPaneMinX = button.getLayoutBounds().getMinX();
+        double gridPaneMinY = button.getLayoutBounds().getMinY();
+        Point2D gridPaneInScene = button.localToScene(gridPaneMinX, gridPaneMinY);
+
+        //Point2D nodeInMarkerLocal = button.sceneToLocal(nodeInScene);
+        //Point2D nodeInMarkerParent = button.localToParent(nodeInMarkerLocal);
+
+        int offset = 45;
+
+        iv.relocate(nodeInScene.getX() - 48
+                + iv.getLayoutBounds().getMinX() - 49, nodeInScene.getY() - offset
+                + iv.getLayoutBounds().getMinY() - offset);
+        //gridPane.add(iv, GridPane.getColumnIndex(button), GridPane.getRowIndex(button));
         //anchorPane.getChildren().add(iv);
         //iv.setX(button.getLayoutX() + button.getParent().getLayoutX());
         //iv.setY(button.getLayoutY() + button.getParent().getLayoutY());
@@ -50,16 +67,13 @@ public class RouletteController implements Controller {
         iv.setScaleY(0.1);
     }
 
-    public void abbmethod(ActionEvent actionEvent) {
-        Stage stage = (Stage) abbbutt.getScene().getWindow();
-        stage.close();
-    }
-
     public void update() {
-
+        anzeige_geldbetrag.setText("Ihr Geldbetrag: " + rouletteModel.getCoins());
     }
 
     public void initialize(Model model) {
+
+        btn_block.setShape(new Circle(10));
 
         rouletteModel = (RouletteModel) model;
 
@@ -78,8 +92,8 @@ public class RouletteController implements Controller {
                 button.setMaxSize(Double.MAX_VALUE, Double.MAX_VALUE);
             }
         }
+        update();
     }
-
 
 
     public void handleJeton5(MouseEvent mouseEvent) {
@@ -120,5 +134,9 @@ public class RouletteController implements Controller {
         jeton10.setImage(new Image("/images/Roulette_Bilder/jetons-10.png"));
         jeton25.setImage(new Image("/images/Roulette_Bilder/jetons-25.png"));
         jeton50.setImage(new Image("/images/Roulette_Bilder/jetons-50.png"));
+    }
+
+    public void abbrechen_onClick(MouseEvent mouseEvent) {
+        rouletteModel.close();
     }
 }

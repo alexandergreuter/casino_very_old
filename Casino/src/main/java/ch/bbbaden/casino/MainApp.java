@@ -6,12 +6,14 @@ import javafx.application.Application;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
+import java.sql.SQLException;
+
 public class MainApp extends Application {
 
     @Override
-    public void start(Stage stage) {
+    public void start(Stage stage) throws SQLException {
         NormalUser user = new NormalUser();
-        user.purchaseCoins(200);
+        user.login("Lijan","0987");
         new ModelManager(stage).setModel(new RouletteModel(user));
     }
 
