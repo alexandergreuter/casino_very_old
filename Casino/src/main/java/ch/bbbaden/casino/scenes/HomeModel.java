@@ -18,12 +18,21 @@ class HomeModel extends Model {
     HomeModel(NormalUser normalUser) {
         super("/fxml/Home.fxml", "Welcome", true);
         this.normalUser = normalUser;
-        games = new Game[]{new TestGameModel(normalUser), new TestGame2Model(normalUser), new TestGame2Model(normalUser)};
+        games = new Game[]{new TestGameModel(normalUser), new TestGame2Model(normalUser)};
     }
 
     String getCoins() {
         try {
             return Integer.toString(normalUser.getCoins());
+        } catch (SQLException e) {
+            System.err.println(e);
+        }
+        return null;
+    }
+
+    String getPurchasedCoins() {
+        try {
+            return Integer.toString(normalUser.getPurchasedCoins());
         } catch (SQLException e) {
             System.err.println(e);
         }

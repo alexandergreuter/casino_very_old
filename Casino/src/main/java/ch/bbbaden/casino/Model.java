@@ -33,6 +33,7 @@ public class Model {
             stage.getIcons().add(new Image("/images/Logo.png"));
             stage.setScene(scene);
             stage.setResizable(false);
+            stage.sizeToScene();
         } catch (IOException e) {
             System.err.println(e.getLocalizedMessage());
         }
@@ -49,7 +50,7 @@ public class Model {
     }
 
     void showAndWait() {
-        notifyController();
+        controller.initialize(this);
         stage.showAndWait();
     }
 
