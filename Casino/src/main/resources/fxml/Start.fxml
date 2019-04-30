@@ -5,7 +5,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" maxHeight="432" maxWidth="768" minHeight="422" minWidth="758" pickOnBounds="false" prefHeight="432.0" prefWidth="768.0" stylesheets="@/styles/BasicStyle.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.bbbaden.casino.scenes.StartController">
+<AnchorPane id="AnchorPane" maxHeight="432" maxWidth="768" minHeight="432" minWidth="768" pickOnBounds="false" prefHeight="432.0" prefWidth="768.0" stylesheets="@/styles/BasicStyle.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.bbbaden.casino.scenes.StartController">
     <ImageView fitHeight="146.0" fitWidth="233.0" layoutX="263.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
         <Image url="@../images/Logo.png" />
     </ImageView>
