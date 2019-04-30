@@ -11,9 +11,6 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 
-import java.net.URL;
-import java.util.ResourceBundle;
-
 /**
  * FXML Controller class
  *
@@ -31,13 +28,6 @@ public class LoginFailedController implements Controller {
 
     private LoginFailedModel loginFailedModel;
 
-    /**
-     * Initializes the controller class.
-     */
-    public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    }
-
     public void button_abort_onAction() {
         loginFailedModel.setRetry(false);
         loginFailedModel.close();
@@ -48,12 +38,17 @@ public class LoginFailedController implements Controller {
         loginFailedModel.close();
     }
 
-    public void update() {
+    public void update(Model model) {
+        loginFailedModel = (LoginFailedModel) model;
 
+    }
+
+    public void update() {
+        errorMessage.setText(loginFailedModel.getErrorMessage());
     }
 
     public void initialize(Model model) {
         loginFailedModel = (LoginFailedModel) model;
-        errorMessage.setText(loginFailedModel.getErrorMessage());
+        update();
     }
 }
