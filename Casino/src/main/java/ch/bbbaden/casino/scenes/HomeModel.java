@@ -29,6 +29,15 @@ class HomeModel extends Model {
         return null;
     }
 
+    String getPurchasedCoins() {
+        try {
+            return Integer.toString(normalUser.getPurchasedCoins());
+        } catch (SQLException e) {
+            System.err.println(e);
+        }
+        return null;
+    }
+
     void playGame() {
         hide();
         changeScene(games[currIndex]);
