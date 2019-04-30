@@ -20,7 +20,7 @@ import java.util.ResourceBundle;
  *
  * @author felix
  */
-public class StartController implements Controller {
+public class StartController implements Initializable, Controller {
 
     @FXML
     private Button login;
@@ -30,6 +30,13 @@ public class StartController implements Controller {
     private Button adminLogin;
 
     private StartModel model;
+
+    /**
+     * Initializes the controller class.
+     */
+    public void initialize(URL url, ResourceBundle rb) {
+
+    }
 
     @FXML
     private void login(ActionEvent event) {

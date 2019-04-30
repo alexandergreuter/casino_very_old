@@ -18,26 +18,41 @@ public class NormalUser extends User {
         super(false);
     }
 
-    public void addCoins(int coins) {
-        this.coins = coins;
+    public void addCoins(int coins, boolean purchased) throws SQLException {
+        updateValues();
+        this.coins += coins;
+        st = connie.createStatement();
+        update = "UPDATE `normalusers` SET `coins` = '" + this.coins + "' WHERE `username` = '" + super.getUsername() + "'";
+        st.executeUpdate(update);
+        if (purchased) {
+            purchasedCoins += coins;
+            update = "UPDATE `normalusers` SET `purchased` = '" + purchasedCoins + "' WHERE `username` = '" + super.getUsername() + "'";
+            st.executeUpdate(update);
+        }
+        changed = true;
     }
 
-    public int getCoins() throws SQLException {
+    private void updateValues() throws SQLException {
         if (changed) {
             st = connie.createStatement();
             rs = st.executeQuery("SELECT `coins` FROM `normalusers` WHERE `username` = \"" + super.getUsername() + "\"");
             rs.next();
-            changed = false;
             coins = Integer.parseInt(rs.getString(1));
-            return coins;
-        } else {
-            return coins;
+            rs = st.executeQuery("SELECT `purchased` FROM `normalusers` WHERE `username` = \"" + super.getUsername() + "\"");
+            rs.next();
+            purchasedCoins = Integer.parseInt(rs.getString(1));
+            changed = false;
         }
     }
 
-    public void purchaseCoins(int coins) {
-        this.purchasedCoins += coins;
-        this.coins += coins;
+    public int getCoins() throws SQLException {
+        updateValues();
+        return coins;
+    }
+
+    public int getPurchasedCoins() throws SQLException {
+        updateValues();
+        return purchasedCoins;
     }
 
     public void register(String username, String password, int coins) throws SQLException {
@@ -47,7 +62,7 @@ public class NormalUser extends User {
                 try {
                     update = "INSERT INTO `normalusers`(`username`, `password`, `coins`, `purchased`) VALUES ('" + username + "','" + calculateHash(password) + "','" + coins + "','" + coins + "')";
                 } catch (NoSuchAlgorithmException e) {
-                    throw new SQLException("damn, critical error");
+                    throw new SQLException("damn critical error");
                 }
                 st = connie.createStatement();
                 st.executeUpdate(update);

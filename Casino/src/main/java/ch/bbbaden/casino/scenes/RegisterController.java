@@ -26,7 +26,7 @@ public class RegisterController implements Controller {
     public Button register;
     public PasswordField password;
     public TextField startCoins;
-    RegisterModel registerModel;
+    private RegisterModel registerModel;
 
     private void limitInput(final TextField textField) {
         textField.textProperty().addListener(new ChangeListener<String>() {
@@ -49,7 +49,6 @@ public class RegisterController implements Controller {
     }
 
     public void initialize(Model model) {
-
         registerModel = (RegisterModel) model;
 
         limitInput(password);
