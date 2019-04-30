@@ -12,7 +12,6 @@ import javafx.animation.ParallelTransition;
 import javafx.animation.TranslateTransition;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -25,16 +24,25 @@ import javafx.util.Duration;
  * @author felix
  */
 public class HomeController implements Controller {
-
-    public Button btn_play;
-    public Label coins;
-    public ImageView game_image;
-    public Button btn_left;
-    public Button btn_right;
+    @FXML
+    private Label coins;
+    @FXML
+    private ImageView game_image;
     @FXML
     private Pane gameView;
 
     private HomeModel homeModel;
+
+    public void initialize(Model model) {
+        homeModel = (HomeModel) model;
+        update();
+    }
+
+    public void update() {
+        coins.setText(homeModel.getCoins());
+        homeModel.getPurchasedCoins();
+        game_image.setImage(new Image(homeModel.getImagePath()));
+    }
 
     public void btn_play_onAction(ActionEvent actionEvent) {
         homeModel.playGame();
@@ -68,16 +76,5 @@ public class HomeController implements Controller {
                 translateTransition
         );
         parallelTransition.play();
-    }
-
-    public void update() {
-        coins.setText(homeModel.getCoins());
-        homeModel.getPurchasedCoins();
-        game_image.setImage(new Image(homeModel.getImagePath()));
-    }
-
-    public void initialize(Model model) {
-        homeModel = (HomeModel) model;
-        update();
     }
 }

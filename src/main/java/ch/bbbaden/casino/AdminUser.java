@@ -4,14 +4,14 @@ import java.util.ArrayList;
 
 public class AdminUser extends User {
 
+    private ArrayList<User> users;
+
     public AdminUser() {
         super(false);
     }
 
-    private ArrayList<User> users;
-
     public ArrayList<NormalUser> getNormalUsers() {
-        ArrayList<NormalUser> normalUsers = new ArrayList<NormalUser>();
+        ArrayList<NormalUser> normalUsers = new ArrayList<>();
         for (User user : users) {
             if (user instanceof NormalUser) {
                 normalUsers.add((NormalUser) user);
@@ -21,7 +21,7 @@ public class AdminUser extends User {
     }
 
     private void updateUsers() {
-        users = new ArrayList<User>();
+        users = new ArrayList<>();
         users.add(new NormalUser());
     }
 }

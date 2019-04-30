@@ -1,10 +1,10 @@
 package ch.bbbaden.casino.scenes;
 
+import ch.bbbaden.casino.Model;
 import ch.bbbaden.casino.NormalUser;
 import ch.bbbaden.casino.games.Game;
 import ch.bbbaden.casino.games.TestGame2Model;
 import ch.bbbaden.casino.games.TestGameModel;
-import ch.bbbaden.casino.Model;
 
 import java.sql.SQLException;
 

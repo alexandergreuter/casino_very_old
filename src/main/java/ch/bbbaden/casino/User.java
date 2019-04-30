@@ -4,15 +4,16 @@ import javax.xml.bind.DatatypeConverter;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.sql.*;
+
 public class User {
 
+    Connection connie;
     private String username, password;
-    protected Connection connie;
     private Statement statement;
     private ResultSet rs;
     private boolean admin;
 
-    public User(boolean admin){
+    User(boolean admin) {
         this.admin = admin;
     }
 
@@ -23,17 +24,16 @@ public class User {
         openConnection();
 
         statement = connie.createStatement();
-        if(admin) {
+        if (admin) {
             rs = statement.executeQuery("SELECT * FROM `adminusers`");
-        }
-        else {
+        } else {
             rs = statement.executeQuery("SELECT * FROM `normalusers`");
         }
 
         while (rs.next()) {
             if (rs.getString(1).equals(username)) {
                 try {
-                    if (calculateHash(password).equals(rs.getString(2))) {
+                    if (calculateHashWithSalt(password).equals(rs.getString(2))) {
                         return;
                     } else {
                         throw new SQLException("Falsches Passwort");
@@ -47,19 +47,18 @@ public class User {
     }
 
 
-    public String calculateHash(String password) throws NoSuchAlgorithmException {
+    String calculateHashWithSalt(String password) throws NoSuchAlgorithmException {
         MessageDigest md = MessageDigest.getInstance("MD5");
         md.update(password.getBytes());
-        byte[] digest = md.digest();
-        String myHash = DatatypeConverter.printHexBinary(digest).toUpperCase();
-        return myHash;
+        md.update((DatatypeConverter.printHexBinary(md.digest()).toUpperCase() + "$" + password).getBytes());
+        return DatatypeConverter.printHexBinary(md.digest()).toUpperCase();
     }
 
-    public void openConnection() throws SQLException {
+    void openConnection() throws SQLException {
         connie = DriverManager.getConnection("jdbc:mysql://localhost:3306/casino", "root", "");
     }
 
-    public boolean userExists(String username) throws SQLException {
+    boolean userExists(String username) throws SQLException {
         statement = connie.createStatement();
         rs = statement.executeQuery("SELECT * FROM `normalusers`");
         while (rs.next()) {
@@ -70,7 +69,7 @@ public class User {
         return false;
     }
 
-    public String getUsername() {
+    String getUsername() {
         return username;
     }
 }

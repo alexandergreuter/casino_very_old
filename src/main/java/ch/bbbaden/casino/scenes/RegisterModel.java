@@ -7,8 +7,6 @@ import java.sql.SQLException;
 
 class RegisterModel extends Model {
 
-    NormalUser normalUser;
-
     RegisterModel() {
         super("/fxml/register.fxml", "register", true);
     }
@@ -22,11 +20,11 @@ class RegisterModel extends Model {
         errView.close();
     }
 
-    public void register(String username, String password, int coins) {
-        if(username.length() >= 20){
+    void register(String username, String password, int coins) {
+        if (username.length() >= 20) {
             showErrorMessage("der Benutzername ist zu lang");
         }
-        normalUser = new NormalUser();
+        NormalUser normalUser = new NormalUser();
         try {
             normalUser.register(username, password, coins);
             normalUser.login(username, password);

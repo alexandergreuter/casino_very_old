@@ -60,7 +60,7 @@ public class NormalUser extends User {
         if (!userExists(username)) {
             try {
                 try {
-                    update = "INSERT INTO `normalusers`(`username`, `password`, `coins`, `purchased`) VALUES ('" + username + "','" + calculateHash(password) + "','" + coins + "','" + coins + "')";
+                    update = "INSERT INTO `normalusers`(`username`, `password`, `coins`, `purchased`) VALUES ('" + username + "','" + calculateHashWithSalt(password) + "','" + coins + "','" + coins + "')";
                 } catch (NoSuchAlgorithmException e) {
                     throw new SQLException("damn critical error");
                 }
