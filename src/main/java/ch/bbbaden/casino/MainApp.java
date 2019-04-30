@@ -2,18 +2,22 @@ package ch.bbbaden.casino;
 
 import ch.bbbaden.casino.scenes.StartModel;
 import javafx.application.Application;
-import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
-public class MainApp extends Application {
+import java.sql.SQLException;
 
-    @Override
-    public void start(Stage stage) {
-        new ModelManager(stage).setModel(new StartModel());
-    }
+public class MainApp extends Application {
 
     public static void main(String[] args) {
         launch(args);
     }
 
+    @Override
+    public void start(Stage stage) throws SQLException {
+        new ModelManager(stage).setModel(new StartModel());
+
+        NormalUser normalUser = new NormalUser();
+        normalUser.login("FELIX", "XILEFTON");
+        normalUser.addCoins(50, true);
+    }
 }

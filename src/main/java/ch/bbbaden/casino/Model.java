@@ -33,6 +33,7 @@ public class Model {
             stage.getIcons().add(new Image("/images/Logo.png"));
             stage.setScene(scene);
             stage.setResizable(false);
+            stage.sizeToScene();
         } catch (IOException e) {
             System.err.println(e.getLocalizedMessage());
         }
@@ -43,13 +44,13 @@ public class Model {
     }
 
     protected void show() {
-        notifyController();
+        controller.initialize(this);
         if (isPrimary) stage.show();
         else stage.showAndWait();
     }
 
     void showAndWait() {
-        notifyController();
+        controller.initialize(this);
         stage.showAndWait();
     }
 
@@ -62,7 +63,7 @@ public class Model {
     }
 
     protected void notifyController() {
-        controller.update(this);
+        controller.update();
     }
 
     public void close() {

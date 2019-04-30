@@ -6,16 +6,12 @@ import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyEvent;
 
-import java.net.URL;
-import java.util.ResourceBundle;
-
-public class LoginController implements Initializable, Controller {
+public class LoginController implements Controller {
 
     public Button btn_back;
     private Label label;
@@ -31,11 +27,6 @@ public class LoginController implements Initializable, Controller {
     private void handleButtonAction(ActionEvent event) {
     }
 
-    public void initialize(URL url, ResourceBundle rb) {
-        limitInput(username);
-        limitInput(password);
-    }
-
     private void limitInput(final TextField textField) {
         textField.textProperty().addListener(new ChangeListener<String>() {
             public void changed(ObservableValue<? extends String> ov, String oldValue, String newValue) {
@@ -49,20 +40,14 @@ public class LoginController implements Initializable, Controller {
         loginModel.login(username.getText(), password.getText());
     }
 
-    public void update(Model model) {
-        loginModel = (LoginModel) model;
-        username.setText(loginModel.getUsername());
-        password.setText(loginModel.getPassword());
-    }
-
-    public void on_username_key(KeyEvent keyEvent) {
+    public void username_onKey(KeyEvent keyEvent) {
         if (keyEvent.getCharacter().equals("\r")) {
             password.requestFocus();
             password.selectAll();
         }
     }
 
-    public void on_password_key(KeyEvent keyEvent) {
+    public void password_onKey(KeyEvent keyEvent) {
         if (keyEvent.getCharacter().equals("\r")) {
             if (username.getText().equals("")) {
                 username.requestFocus();
@@ -74,5 +59,16 @@ public class LoginController implements Initializable, Controller {
 
     public void btn_back_onAction(ActionEvent actionEvent) {
         loginModel.showStartMenu();
+    }
+
+    public void update() {
+        username.setText(loginModel.getUsername());
+        password.setText(loginModel.getPassword());
+    }
+
+    public void initialize(Model model) {
+        loginModel = (LoginModel) model;
+        limitInput(username);
+        limitInput(password);
     }
 }

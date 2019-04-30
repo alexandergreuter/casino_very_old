@@ -17,8 +17,9 @@
 }
 
 #AnchorPane {
-    -fx-background-image: url("../../java/ch/bbbaden/casino/resources/images/background.jpg");
+    -fx-background-image: url("/images/background.jpg");
     -fx-background-repeat: stretch;
     -fx-background-size: 768 432;
     -fx-background-position: center center;
+    -fx-border-width: 0;
 }
