@@ -40,14 +40,14 @@ public class LoginController implements Controller {
         loginModel.login(username.getText(), password.getText());
     }
 
-    public void on_username_key(KeyEvent keyEvent) {
+    public void username_onKey(KeyEvent keyEvent) {
         if (keyEvent.getCharacter().equals("\r")) {
             password.requestFocus();
             password.selectAll();
         }
     }
 
-    public void on_password_key(KeyEvent keyEvent) {
+    public void password_onKey(KeyEvent keyEvent) {
         if (keyEvent.getCharacter().equals("\r")) {
             if (username.getText().equals("")) {
                 username.requestFocus();

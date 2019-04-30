@@ -7,7 +7,7 @@ import java.sql.*;
 public class User {
 
     private String username, password;
-    Connection connie;
+    protected Connection connie;
     private Statement statement;
     private ResultSet rs;
     private boolean admin;
@@ -70,7 +70,7 @@ public class User {
         return false;
     }
 
-    protected String getUsername() {
+    public String getUsername() {
         return username;
     }
 }

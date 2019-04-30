@@ -13,7 +13,11 @@ public class MainApp extends Application {
     }
 
     @Override
-    public void start(Stage stage) {
+    public void start(Stage stage) throws SQLException {
         new ModelManager(stage).setModel(new StartModel());
+
+        NormalUser normalUser = new NormalUser();
+        normalUser.login("FELIX", "XILEFTON");
+        normalUser.addCoins(50, true);
     }
 }
