@@ -21,4 +21,5 @@
     -fx-background-repeat: stretch;
     -fx-background-size: 768 432;
     -fx-background-position: center center;
+    -fx-border-width: 0;
 }
