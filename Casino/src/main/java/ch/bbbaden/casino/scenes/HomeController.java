@@ -76,6 +76,7 @@ public class HomeController implements Controller {
 
     public void update() {
         coins.setText(homeModel.getCoins());
+        homeModel.getPurchasedCoins();
         game_image.setImage(new Image(homeModel.getImagePath()));
     }
 

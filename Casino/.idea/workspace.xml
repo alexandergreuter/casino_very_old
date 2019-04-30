@@ -1,36 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="565a69c0-2ccd-4b6d-9928-fca5fbe96bbf" name="Default Changelist" comment="created some of my classes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/Model.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/scenes/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/scenes/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/scenes/LoginModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/scenes/LoginModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/scenes/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/scenes/RegisterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/scenes/RegisterFailedController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/scenes/RegisterFailedController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/Start.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/Start.fxml" afterDir="false" />
+    <list default="true" id="a4fe1bce-5962-4d5a-9500-1b3f2ac8f087" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/MainApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/NormalUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/NormalUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/scenes/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/scenes/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/scenes/HomeModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/scenes/HomeModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/styles/BasicStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/styles/BasicStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/casino-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/casino-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ch/bbbaden/casino/NormalUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ch/bbbaden/casino/NormalUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ch/bbbaden/casino/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ch/bbbaden/casino/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ch/bbbaden/casino/games/PennyPusherController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ch/bbbaden/casino/games/PennyPusherModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ch/bbbaden/casino/games/TestGame2Model.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ch/bbbaden/casino/games/TestGame2Model.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ch/bbbaden/casino/scenes/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ch/bbbaden/casino/scenes/HomeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ch/bbbaden/casino/scenes/HomeModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ch/bbbaden/casino/scenes/HomeModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ch/bbbaden/casino/scenes/LoginController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ch/bbbaden/casino/scenes/LoginController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ch/bbbaden/casino/scenes/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ch/bbbaden/casino/scenes/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ch/bbbaden/casino/scenes/LoginModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ch/bbbaden/casino/scenes/LoginModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ch/bbbaden/casino/scenes/RegisterController$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ch/bbbaden/casino/scenes/RegisterController$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ch/bbbaden/casino/scenes/RegisterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ch/bbbaden/casino/scenes/RegisterController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fonts/Casino.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fonts/Casino.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fonts/CasinoFlat.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fxml/Admin.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fxml/PennyPusher.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/images/PennyPusher_Logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -45,79 +21,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/RegisterFailed.fxml">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/Start.fxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/Shop.fxml">
-          <provider selected="true" editor-type-id="text-editor" />
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/LoginFailed.fxml">
-          <provider selected="true" editor-type-id="text-editor" />
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/styles/BasicStyle.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/styles/StartStyle.css">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/Home.fxml">
-          <provider selected="true" editor-type-id="text-editor" />
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/Register.fxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="13" selection-start-line="13" selection-end-line="13" selection-end-column="46" />
-            </state>
-          </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/TestGame.fxml">
-          <provider selected="true" editor-type-id="text-editor" />
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/Model.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/NormalUser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+            <state relative-caret-position="248">
+              <caret line="23" column="38" lean-forward="true" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+              <folding>
+                <element signature="e#395#396#0" expanded="true" />
+                <element signature="e#423#424#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/scenes/HomeModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="426">
+              <caret line="29" column="20" lean-forward="true" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/scenes/HomeController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="381">
+              <caret line="78" column="38" lean-forward="true" selection-start-line="78" selection-start-column="38" selection-end-line="78" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/MainApp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#426#427#0" expanded="true" />
+                <element signature="e#454#455#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -140,7 +87,6 @@
         <option value="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/scenes/LoginFailedController.java" />
         <option value="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/games/TestGameController.java" />
         <option value="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/games/TestGame2Controller.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/scenes/HomeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/User.java" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/Login.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/scenes/RegisterController.java" />
@@ -148,9 +94,14 @@
         <option value="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/scenes/RegisterFailedModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/scenes/LoginModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/scenes/LoginController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/styles/BasicStyle.css" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/Start.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/Model.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/styles/BasicStyle.css" />
+        <option value="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/scenes/StartModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/scenes/HomeModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/scenes/HomeController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/MainApp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/NormalUser.java" />
       </list>
     </option>
   </component>
@@ -181,10 +132,10 @@
     <option name="delegateBuildToMaven" value="true" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="351" />
-    <option name="y" value="-8" />
-    <option name="width" value="976" />
-    <option name="height" value="1038" />
+    <option name="x" value="189" />
+    <option name="y" value="42" />
+    <option name="width" value="1565" />
+    <option name="height" value="966" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -194,18 +145,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="casino" type="58d84e3e:PackageViewProjectNode" />
-              <item name="casino" type="616d4139:PackageViewModuleNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -284,6 +223,18 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="casino" type="58d84e3e:PackageViewProjectNode" />
+              <item name="casino" type="616d4139:PackageViewModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -475,23 +426,22 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9486000" />
+    <option name="totallyTimeSpent" value="14458000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20625" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1546724" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Build" sideWeight="0.49947917" weight="0.3297062" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.428125" visible="true" weight="0.2796518" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4989259" visible="true" weight="0.25681818" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -502,6 +452,7 @@
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.571875" side_tool="true" weight="0.2796518" />
       <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49635416" weight="0.32861805" />
+      <window_info anchor="bottom" id="Build" order="13" sideWeight="0.49947917" weight="0.3297062" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -572,13 +523,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/scenes/StartModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/scenes/StartController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="451">
@@ -633,45 +577,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/NormalUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="27" column="98" selection-start-line="27" selection-start-column="98" selection-end-line="27" selection-end-column="98" />
-          <folding>
-            <element signature="e#395#396#0" expanded="true" />
-            <element signature="e#423#424#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1608">
-          <caret line="74" column="5" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/scenes/LoginFailedModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/scenes/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="55" column="13" lean-forward="true" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/scenes/HomeModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -682,13 +591,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/MainApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -773,12 +675,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/Login.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="15" column="140" selection-start-line="15" selection-start-column="140" selection-end-line="15" selection-end-column="140" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/styles/BasicStyle.css~HEAD">
       <provider selected="true" editor-type-id="text-editor">
@@ -789,56 +691,130 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/Home.fxml">
-      <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/Shop.fxml">
-      <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/LoginFailed.fxml">
-      <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/Register.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
           <caret line="13" selection-start-line="13" selection-end-line="13" selection-end-column="46" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/styles/BasicStyle.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+        <state relative-caret-position="552">
+          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/TestGame.fxml">
-      <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/RegisterFailed.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="192">
           <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/Start.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_202/javafx-src.zip!/javafx/application/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="222" column="23" selection-start-line="222" selection-start-column="23" selection-end-line="222" selection-end-column="23" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/Model.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        <state relative-caret-position="205">
+          <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/ModelManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/scenes/StartModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="19" column="38" lean-forward="true" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+          <folding>
+            <element signature="e#424#425#0" expanded="true" />
+            <element signature="e#469#470#0" expanded="true" />
+            <element signature="e#496#497#0" expanded="true" />
+            <element signature="e#544#545#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/scenes/HomeModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="29" column="20" lean-forward="true" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/scenes/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="78" column="38" lean-forward="true" selection-start-line="78" selection-start-column="38" selection-end-line="78" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/MainApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#426#427#0" expanded="true" />
+            <element signature="e#454#455#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ch/bbbaden/casino/NormalUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="23" column="38" lean-forward="true" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+          <folding>
+            <element signature="e#395#396#0" expanded="true" />
+            <element signature="e#423#424#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
