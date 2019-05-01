@@ -23,8 +23,8 @@ public class BaccaratModel extends Game{
         return null;
     }
 
-    public void updateCoins(int selectedBet) {
+    public void updateCoins(int selectedBet, boolean purchased) throws SQLException {
         this.selectedBet = selectedBet;
-        normalUser.addCoins(this.selectedBet);
+        normalUser.addCoins(this.selectedBet, purchased);
     }
 }
