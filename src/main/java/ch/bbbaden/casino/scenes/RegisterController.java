@@ -7,63 +7,73 @@ package ch.bbbaden.casino.scenes;
 
 import ch.bbbaden.casino.Controller;
 import ch.bbbaden.casino.Model;
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
-import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
-
-import java.net.URL;
-import java.util.ResourceBundle;
+import javafx.scene.input.KeyCode;
 
 /**
  * FXML Controller class
  *
  * @author felix
  */
-public class RegisterController implements Initializable, Controller {
+public class RegisterController implements Controller {
 
-    public Button login;
     public TextField username;
     public Button register;
     public PasswordField password;
     public TextField startCoins;
-    RegisterModel registerModel;
+    private RegisterModel registerModel;
 
-    /**
-     * Initializes the controller class.
-     */
+    public void initialize(Model model) {
+        registerModel = (RegisterModel) model;
 
-    public void initialize(URL url, ResourceBundle rb) {
-
-        limitInput(password);
-        limitInput(username);
-
-        startCoins.textProperty().addListener(new ChangeListener<String>() {
-            public void changed(ObservableValue<? extends String> ov, String oldValue, String newValue) {
-                if (!newValue.matches("[0-9]*")) {
+        username.textProperty().addListener((ov, oldValue, newValue) -> {
+            username.setText(newValue.toUpperCase());
+            if (username.getLength() >= 15) {
+                username.setText(oldValue);
+            }
+        });
+        username.setOnKeyPressed(ke -> {
+            if (ke.getCode().equals(KeyCode.ENTER)) {
+                password.requestFocus();
+                password.selectAll();
+            }
+        });
+        password.setOnKeyPressed(ke -> {
+            if (ke.getCode().equals(KeyCode.ENTER)) {
+                startCoins.requestFocus();
+            }
+        });
+        startCoins.setOnKeyPressed(ke -> {
+            if (ke.getCode().equals(KeyCode.ENTER)) {
+                if (username.getText().equals("")) {
+                    startCoins.requestFocus();
+                } else {
+                    if (username.getText() == null) {
+                        username.requestFocus();
+                    } else if (password.getText() == null) {
+                        password.requestFocus();
+                    } else if (startCoins.getText() == null) {
+                        startCoins.requestFocus();
+                    } else {
+                        registerModel.register(username.getText(), password.getText(), Integer.parseInt(startCoins.getText()));
+                    }
+                }
+            }
+        });
+        startCoins.textProperty().addListener((ov, oldValue, newValue) -> {
+            if (newValue != null) {
+                if (!newValue.matches("[0-9]*") || Integer.parseInt(newValue) > 1000) {
                     startCoins.setText(oldValue);
                 }
             }
         });
     }
 
-    private void limitInput(final TextField textField) {
-        textField.textProperty().addListener(new ChangeListener<String>() {
-            public void changed(ObservableValue<? extends String> ov, String oldValue, String newValue) {
-                if (newValue.length() >= 20) {
-                    textField.setText(oldValue);
-                } else {
-                    textField.setText(newValue.toUpperCase());
-                }
-            }
-        });
-    }
+    public void update() {
 
-    public void update(Model model) {
-        registerModel = (RegisterModel) model;
     }
 
     public void on_register(ActionEvent actionEvent) throws NumberFormatException {

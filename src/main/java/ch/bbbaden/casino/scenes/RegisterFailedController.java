@@ -3,14 +3,23 @@ package ch.bbbaden.casino.scenes;
 import ch.bbbaden.casino.Controller;
 import ch.bbbaden.casino.Model;
 import javafx.event.ActionEvent;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 
 public class RegisterFailedController implements Controller {
 
-    RegisterFailedModel registerFailedModel;
+    public Label errorMessage;
+    public Button button_abort;
+    public Button button_retry;
+    private RegisterFailedModel registerFailedModel;
 
-    public void update(Model model) {
+    public void initialize(Model model) {
         registerFailedModel = (RegisterFailedModel) model;
-        registerFailedModel.getErrorMessage();
+        update();
+    }
+
+    public void update() {
+        errorMessage.setText(registerFailedModel.getErrorMessage());
     }
 
     public void button_abort_onAction(ActionEvent actionEvent) {

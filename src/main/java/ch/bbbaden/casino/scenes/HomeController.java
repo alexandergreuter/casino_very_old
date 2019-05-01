@@ -12,44 +12,35 @@ import javafx.animation.ParallelTransition;
 import javafx.animation.TranslateTransition;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 import javafx.util.Duration;
 
-import java.net.URL;
-import java.util.ResourceBundle;
-
 /**
  * FXML Controller class
  *
  * @author felix
  */
-public class HomeController implements Initializable, Controller {
-
-    public Button btn_play;
-    public Label coins;
-    public ImageView game_image;
-    public Button btn_left;
-    public Button btn_right;
+public class HomeController implements Controller {
+    @FXML
+    private Label coins;
+    @FXML
+    private ImageView game_image;
     @FXML
     private Pane gameView;
 
     private HomeModel homeModel;
 
-    /**
-     * Initializes the controller class.
-     */
-    public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+    public void initialize(Model model) {
+        homeModel = (HomeModel) model;
+        update();
     }
 
-    public void update(Model model) {
-        homeModel = (HomeModel) model;
+    public void update() {
         coins.setText(homeModel.getCoins());
+        homeModel.getPurchasedCoins();
         game_image.setImage(new Image(homeModel.getImagePath()));
     }
 

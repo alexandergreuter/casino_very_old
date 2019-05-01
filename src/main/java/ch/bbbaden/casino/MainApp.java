@@ -7,13 +7,13 @@ import javafx.stage.Stage;
 
 public class MainApp extends Application {
 
-    @Override
-    public void start(Stage stage) {
-        new ModelManager(stage).setModel(new StartModel());
-    }
-
     public static void main(String[] args) {
         launch(args);
     }
 
+    @Override
+    public void start(Stage stage) {
+        Font.loadFont(getClass().getResourceAsStream("/fonts/casino.ttf"), 20);
+        new ModelManager(stage).setModel(new StartModel());
+    }
 }

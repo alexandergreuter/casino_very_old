@@ -30,7 +30,7 @@ public class Model {
             controller = loader.getController();
             Scene scene = new Scene(root);
             stage.setTitle(windowTitle);
-            stage.getIcons().add(new Image("/images/Logo.png"));
+            stage.getIcons().add(new Image("/images/casino_logo.gif"));
             stage.setScene(scene);
             stage.setResizable(false);
         } catch (IOException e) {
@@ -43,13 +43,14 @@ public class Model {
     }
 
     protected void show() {
-        notifyController();
+        controller.initialize(this);
+        stage.sizeToScene();
         if (isPrimary) stage.show();
         else stage.showAndWait();
     }
 
     void showAndWait() {
-        notifyController();
+        controller.initialize(this);
         stage.showAndWait();
     }
 
@@ -62,7 +63,7 @@ public class Model {
     }
 
     protected void notifyController() {
-        controller.update(this);
+        controller.update();
     }
 
     public void close() {

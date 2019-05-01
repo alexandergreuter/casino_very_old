@@ -7,34 +7,71 @@ package ch.bbbaden.casino.scenes;
 
 import ch.bbbaden.casino.Controller;
 import ch.bbbaden.casino.Model;
+import javafx.animation.FadeTransition;
+import javafx.animation.ParallelTransition;
+import javafx.animation.TranslateTransition;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-
-import java.net.URL;
-import java.util.ResourceBundle;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.Pane;
+import javafx.util.Duration;
 
 /**
  * FXML Controller class
  *
  * @author felix
  */
-public class StartController implements Initializable, Controller {
-
+public class StartController implements Controller {
     @FXML
-    private Button login;
+    private Pane pane_buttons;
     @FXML
-    private Button registrieren;
-    @FXML
-    private Button adminLogin;
+    private ImageView logo;
 
     private StartModel model;
 
     /**
      * Initializes the controller class.
      */
-    public void initialize(URL url, ResourceBundle rb) {
+    public void initialize(Model model) {
+        this.model = (StartModel) model;
+        playStartAnimations();
+    }
+
+    private void playStartAnimations() {
+        FadeTransition fadeIn = new FadeTransition(Duration.millis(1600), logo);
+        fadeIn.setFromValue(0.0);
+        fadeIn.setToValue(1.0);
+
+        TranslateTransition moveUp = new TranslateTransition();
+        moveUp.setDuration(Duration.millis(1700));
+        moveUp.setFromY(+70);
+        moveUp.setToY(0);
+
+        ParallelTransition fadeUp = new ParallelTransition();
+        fadeUp.setNode(logo);
+        fadeUp.getChildren().addAll(fadeIn, moveUp);
+
+        fadeUp.setOnFinished(actionEvent -> {
+            FadeTransition fadeIn1 = new FadeTransition();
+            fadeIn1.setDuration(Duration.millis(600));
+            fadeIn1.setFromValue(0);
+            fadeIn1.setToValue(1);
+
+            TranslateTransition moveUp1 = new TranslateTransition();
+            moveUp1.setDuration(Duration.millis(700));
+            moveUp1.setFromY(+30);
+            moveUp1.setToY(0);
+
+            ParallelTransition fadeUp1 = new ParallelTransition();
+            fadeUp1.setNode(pane_buttons);
+            fadeUp1.getChildren().addAll(fadeIn1, moveUp1);
+            fadeUp1.play();
+        });
+
+        fadeUp.play();
+    }
+
+    public void update() {
 
     }
 
@@ -50,9 +87,5 @@ public class StartController implements Initializable, Controller {
 
     @FXML
     private void adminLogin(ActionEvent event) {
-    }
-
-    public void update(Model model) {
-        this.model = (StartModel) model;
     }
 }

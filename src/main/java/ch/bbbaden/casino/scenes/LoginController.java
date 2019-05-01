@@ -2,77 +2,50 @@ package ch.bbbaden.casino.scenes;
 
 import ch.bbbaden.casino.Controller;
 import ch.bbbaden.casino.Model;
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.scene.input.KeyEvent;
+import javafx.scene.input.KeyCode;
 
-import java.net.URL;
-import java.util.ResourceBundle;
-
-public class LoginController implements Initializable, Controller {
-
-    public Button btn_back;
-    private Label label;
-    @FXML
-    private Button login;
+public class LoginController implements Controller {
     @FXML
     private TextField username;
     @FXML
     private TextField password;
-
+    @FXML
     private LoginModel loginModel;
 
-    private void handleButtonAction(ActionEvent event) {
-    }
-
-    public void initialize(URL url, ResourceBundle rb) {
-        limitInput(username);
-        limitInput(password);
-    }
-
-    private void limitInput(final TextField textField) {
-        textField.textProperty().addListener(new ChangeListener<String>() {
-            public void changed(ObservableValue<? extends String> ov, String oldValue, String newValue) {
-                textField.setText(newValue.toUpperCase());
+    public void initialize(Model model) {
+        loginModel = (LoginModel) model;
+        username.textProperty().addListener((ov, oldValue, newValue) -> username.setText(newValue.toUpperCase()));
+        username.setOnKeyPressed(ke -> {
+            if (ke.getCode().equals(KeyCode.ENTER)) {
+                password.requestFocus();
+                password.selectAll();
+            }
+        });
+        password.setOnKeyPressed(ke -> {
+            if (ke.getCode().equals(KeyCode.ENTER)) {
+                if (username.getText().equals("")) {
+                    username.requestFocus();
+                } else {
+                    loginModel.login(username.getText(), password.getText());
+                }
             }
         });
     }
 
-    @FXML
-    private void on_login(ActionEvent event) {
-        loginModel.login(username.getText(), password.getText());
-    }
-
-    public void update(Model model) {
-        loginModel = (LoginModel) model;
+    public void update() {
         username.setText(loginModel.getUsername());
         password.setText(loginModel.getPassword());
     }
 
-    public void on_username_key(KeyEvent keyEvent) {
-        if (keyEvent.getCharacter().equals("\r")) {
-            password.requestFocus();
-            password.selectAll();
-        }
+    @FXML
+    private void on_login() {
+        loginModel.login(username.getText(), password.getText());
     }
 
-    public void on_password_key(KeyEvent keyEvent) {
-        if (keyEvent.getCharacter().equals("\r")) {
-            if (username.getText().equals("")) {
-                username.requestFocus();
-            } else {
-                loginModel.login(username.getText(), password.getText());
-            }
-        }
-    }
-
-    public void btn_back_onAction(ActionEvent actionEvent) {
+    @FXML
+    public void btn_back_onAction() {
         loginModel.showStartMenu();
     }
 }
