@@ -1,9 +1,1 @@
-
-Casino/target/classes/ch/bbbaden/casino/games/PennyPusherModel.class
-Casino/target/classes/ch/bbbaden/casino/games/PennyPusherController.class
-Casino/target/classes/fxml/PennyPusher.fxml
-Casino/target/classes/images/PennyPusher_Logo.png
-target/casino-1.0-SNAPSHOT.jar
-Casino/target/casino-1.0-SNAPSHOT.jar
-Casino/target/classes/ch/bbbaden/casino/Controller.class
-*.class
+.idea/
